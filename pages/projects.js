@@ -13,11 +13,45 @@ export default function projects() {
 				<Layout title='Projects | Matthew Leng'>
 					<div className='container'>
 						<Image src='/pls.png' width='100px' height='100px' />
-						<h1>
-							<Link href='/'>
-								<a>Main page?</a>
-							</Link>
-						</h1>
+						<h1>My Projects:</h1>
+						<div className='project_container'>
+							<div className='card'>
+								<h3>The Cellar</h3>
+								<h4>Description:</h4>
+								<p>
+									A mock wine e-commerce website. With login capability that
+									allows for persistent product storaeg in cart
+								</p>
+								<p>
+									<b>
+										<u>Built on</u>: React, Redux, Express, PostgreSQL
+									</b>
+								</p>
+								<br />
+								<Link href='https://github.com/Team-Kappa/GraceShopper'>
+									<a>GitHub</a>
+								</Link>{' '}
+								| {''}
+								<Link href='https://thecellar.herokuapp.com/'>
+									<a>Deployed site</a>
+								</Link>
+							</div>
+							<div className='card'>
+								<h3>Notables</h3>
+								<h4>Description:</h4>
+								<p>A markdown editor that can run integrated code snippets.</p>
+								<p>
+									<b>
+										<u>Built on</u>: HTML, CSS, JS, React, Redux, Express,
+										Docker
+									</b>
+								</p>
+								<br />
+								<Link href='https://github.com/2011-libra/notables'>
+									<a>GitHub</a>
+								</Link>
+							</div>
+						</div>
 					</div>
 				</Layout>
 			</main>
@@ -27,14 +61,6 @@ export default function projects() {
 					min-height: 100vh;
 					min-width: 95vw;
 					padding: 0 0.5rem;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-				}
-
-				main {
-					flex: 1;
 					display: flex;
 					flex-direction: column;
 					justify-content: center;
@@ -52,6 +78,9 @@ export default function projects() {
 
 				footer img {
 					margin-left: 0.5rem;
+				}
+				.project_container {
+					display: flex;
 				}
 
 				footer a {
