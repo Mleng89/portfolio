@@ -21,15 +21,15 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
             </li>
 
             <li>
-              <Link href="/about">
-                <a>About</a>
+              <Link href="/projects">
+                <a>Projects</a>
               </Link>{' '}
               |
             </li>
 
             <li>
-              <Link href="/projects">
-                <a>Projects</a>
+              <Link href="/about">
+                <a>About</a>
               </Link>
             </li>
           </ul>
@@ -61,6 +61,9 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
               </a>
             </Link>
           </div>
+          <div>
+            <a href="mailto:mleng89@gmail.com">Contact me</a>
+          </div>
         </div>
         <p className="footer_name">© 2021 Matthew Leng</p>
       </footer>
@@ -70,24 +73,37 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
             border: 1px black solid;
           }
           nav {
-            border: 1px black solid;
+            padding-top: 5px;
+            padding-right: 20px;
+            box-shadow: 10px 2px 10px grey;
+            overflow: hidden;
             min-height: 55px;
-            min-width: 100px;
+            min-width: 100vw;
+          }
+          nav a:hover {
+            background-color: #fffffe;
+            opacity: 0.4;
+            color: black;
           }
           ul {
             display: flex;
-            justify-content: center;
+            justify-content: flex-end;
             list-style-type: none;
             margin: 0;
             margin-top: 10px;
             padding: 0;
+          }
+          footer {
+            padding-top: 25px;
+            background-color: #d4d8f0;
+            min-height: 100px;
           }
           .footer_text {
             display: flex;
             justify-content: center;
           }
           .footer_text > div {
-            margin-left: 10px;
+            margin-left: 30px;
           }
           .footer_name {
             text-align: center;
