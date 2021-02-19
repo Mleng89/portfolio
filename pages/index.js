@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import Layout from './layout';
+import Typical from 'react-typical';
+
 export default function Home() {
 	return (
 		<div>
@@ -13,11 +15,12 @@ export default function Home() {
 				<Layout title='Home | Matthew Leng'>
 					<div className='container'>
 						<Image src='/pls.png' width='100px' height='100px' />
-						<h1>
-							<Link href='/projects'>
-								<a>Second page?</a>
-							</Link>
-						</h1>
+						<h2 className='code'>Hello! My name is Matthew Leng</h2>
+						<Typical
+							steps={['I am a software engineer!', 100]}
+							loop='2'
+							wrapper='h3'
+						/>
 					</div>
 				</Layout>
 			</main>
@@ -102,7 +105,6 @@ export default function Home() {
 					line-height: 1.5;
 					font-size: 1.5rem;
 				}
-
 				code {
 					background: #fafafa;
 					border-radius: 5px;
@@ -111,56 +113,8 @@ export default function Home() {
 					font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
 						DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
 				}
-
-				.grid {
-					display: flex;
-					align-items: center;
-					justify-content: center;
-					flex-wrap: wrap;
-
-					max-width: 800px;
-					margin-top: 3rem;
-				}
-
-				.card {
-					margin: 1rem;
-					flex-basis: 45%;
-					padding: 1.5rem;
-					text-align: left;
-					color: inherit;
-					text-decoration: none;
-					border: 1px solid #eaeaea;
-					border-radius: 10px;
-					transition: color 0.15s ease, border-color 0.15s ease;
-				}
-
-				.card:hover,
-				.card:focus,
-				.card:active {
-					color: #0070f3;
-					border-color: #0070f3;
-				}
-
-				.card h3 {
-					margin: 0 0 1rem 0;
-					font-size: 1.5rem;
-				}
-
-				.card p {
-					margin: 0;
-					font-size: 1.25rem;
-					line-height: 1.5;
-				}
-
 				.logo {
 					height: 1em;
-				}
-
-				@media (max-width: 600px) {
-					.grid {
-						width: 100%;
-						flex-direction: column;
-					}
 				}
 			`}</style>
 
