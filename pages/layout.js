@@ -39,23 +39,29 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
 			{children}
 
 			<footer>
-				<p className='footer_text'>
+				<div className='footer_text'>
 					<div>
 						<Link href='https://github.com/Mleng89'>
-							<Image src='/github.svg' width='20px' height='20px' />
+							<a>
+								<Image src='/github.svg' width='20px' height='20px' />
+							</a>
 						</Link>
 					</div>
 					<div>
 						<Link href='https://www.linkedin.com/in/matthew-leng/'>
-							<Image src='/linkedin.svg' width='20px' height='20px' />
+							<a>
+								<Image src='/linkedin.svg' width='20px' height='20px' />
+							</a>
 						</Link>
 					</div>
 					<div>
 						<Link href='https://twitter.com/matthewleng'>
-							<Image src='/twitter.svg' width='20px' height='20px' />
+							<a>
+								<Image src='/twitter.svg' width='20px' height='20px' />
+							</a>
 						</Link>
 					</div>
-				</p>
+				</div>
 				<p className='footer_name'>© 2021 Matthew Leng</p>
 			</footer>
 			<style jsx>
