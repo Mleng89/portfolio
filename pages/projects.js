@@ -23,6 +23,7 @@ export default function projects() {
                   allows for persistent product storaeg in cart
                 </p>
                 <p>
+                  <br />
                   <b>
                     <u>Built on</u>: React, Redux, Express, PostgreSQL
                   </b>
@@ -41,6 +42,7 @@ export default function projects() {
                 <h4>Description:</h4>
                 <p>A markdown editor that can run integrated code snippets.</p>
                 <p>
+                  <br />
                   <b>
                     <u>Built on</u>: HTML, CSS, JS, React, Redux, Express,
                     Docker
@@ -48,6 +50,25 @@ export default function projects() {
                 </p>
                 <br />
                 <Link href="https://github.com/2011-libra/notables">
+                  <a>GitHub</a>
+                </Link>{' '}
+                | {''}
+                <Link href="http://3.128.61.184:8080/">
+                  <a>Deployed Site</a>
+                </Link>
+              </div>
+              <div className="card">
+                <h3>Into the Abyss</h3>
+                <h4>Description:</h4>
+                <p>Dungeon crawling card game made in Phaser.js</p>
+                <p>
+                  <br />
+                  <b>
+                    <u>Built on</u>: HTML and Phaser.js
+                  </b>
+                </p>
+                <br />
+                <Link href="https://github.com/Mleng89/Stackathon">
                   <a>GitHub</a>
                 </Link>
               </div>
@@ -94,59 +115,11 @@ export default function projects() {
           text-decoration: none;
         }
 
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
         .card {
           margin: 1rem;
           flex-basis: 45%;
           padding: 1.5rem;
           text-align: left;
-          color: inherit;
-          text-decoration: none;
           border: 1px solid #eaeaea;
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
@@ -161,17 +134,19 @@ export default function projects() {
 
         .card h3 {
           margin: 0 0 1rem 0;
-          font-size: 1.5rem;
+          font-size: 2rem;
+          color: #232946;
         }
-
+        .card h4 {
+          margin: 0 0 1rem 0;
+          font-size: 1.2rem;
+          color: #232946;
+        }
         .card p {
           margin: 0;
-          font-size: 1.25rem;
+          font-size: 1.2rem;
           line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
+          color: #232946;
         }
 
         @media (max-width: 600px) {
@@ -190,10 +165,6 @@ export default function projects() {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
         }
       `}</style>
     </div>
