@@ -62,9 +62,12 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
             </Link>
           </div>
           <div>
-            <a href="mailto:mleng89@gmail.com">Contact me</a>
+            <a href="mailto:mleng89@gmail.com">
+              <button className="button">Contact me</button>
+            </a>
           </div>
         </div>
+
         <p className="footer_name">© 2021 Matthew Leng</p>
       </footer>
       <style jsx>
@@ -107,6 +110,15 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
           }
           .footer_name {
             text-align: center;
+          }
+          .button {
+            margin-top: -10px;
+            border-width: 1px;
+            border-color: rgba(0 0 0);
+            border-radius: 0.5rem;
+            background-color: rgba(234, 244, 244);
+            box-shadow: 0 0 1px 0;
+            padding: 0.5rem;
           }
         `}
       </style>
