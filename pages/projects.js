@@ -20,7 +20,7 @@ export default function projects() {
                 <h4>Description:</h4>
                 <p>
                   A mock wine e-commerce website. With login capability that
-                  allows for persistent product storaeg in cart
+                  allows for persistent product storage in cart
                 </p>
                 <p>
                   <br />
