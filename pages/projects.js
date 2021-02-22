@@ -87,27 +87,15 @@ export default function projects() {
           justify-content: center;
           align-items: center;
         }
-
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
+        main {
+          flex: 1;
           display: flex;
+          flex-direction: column;
           justify-content: center;
           align-items: center;
-        }
-
-        footer img {
-          margin-left: 0.5rem;
         }
         .project_container {
           display: flex;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
         }
 
         a {
@@ -122,7 +110,6 @@ export default function projects() {
           text-align: left;
           border: 1px solid #eaeaea;
           border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
         }
 
         .card:hover,
@@ -148,13 +135,6 @@ export default function projects() {
           line-height: 1.5;
           color: #232946;
         }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
-          }
-        }
       `}</style>
 
       <style jsx global>{`
@@ -165,6 +145,10 @@ export default function projects() {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
+        }
+        * {
+          box-sizing: border-box;
+          color: #121629;
         }
       `}</style>
     </div>

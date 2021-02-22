@@ -72,9 +72,6 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
       </footer>
       <style jsx>
         {`
-          .container {
-            border: 1px black solid;
-          }
           nav {
             padding-top: 5px;
             padding-right: 20px;

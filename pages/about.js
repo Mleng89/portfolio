@@ -158,6 +158,7 @@ export default function about() {
 
         * {
           box-sizing: border-box;
+          color: #121629;
         }
       `}</style>
     </div>

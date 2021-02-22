@@ -14,12 +14,16 @@ export default function Home() {
       <main>
         <Layout title="Home | Matthew Leng">
           <div className="container">
-            <Image src="/pls.png" width="100px" height="100px" />
-            <h2 className="code">Hello! My name is Matthew Leng</h2>
+            <h2 className="title">
+              Hello! My name is <span className="title_name">Matthew Leng</span>
+            </h2>
             <Typical
-              steps={['I am a software engineer!', 100]}
+              steps={[
+                'I am a former pre-school teacher turned software engineer!',
+                100
+              ]}
               loop="2"
-              wrapper="h3"
+              wrapper="h2"
             />
           </div>
         </Layout>
@@ -43,7 +47,12 @@ export default function Home() {
           justify-content: center;
           align-items: center;
         }
-
+        .title {
+          font-size: 3em;
+        }
+        .title_name {
+          color: #232946;
+        }
         footer {
           width: 100%;
           height: 100px;
@@ -68,42 +77,10 @@ export default function Home() {
           text-decoration: none;
         }
 
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
+        .title:hover,
         .title a:focus,
         .title a:active {
           text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-        .logo {
-          height: 1em;
         }
       `}</style>
 
@@ -119,6 +96,7 @@ export default function Home() {
 
         * {
           box-sizing: border-box;
+          color: #121629;
         }
       `}</style>
     </div>
