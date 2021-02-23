@@ -11,7 +11,21 @@ export default function about() {
       <main>
         <Layout title="About | Matthew Leng">
           <div className="container">
-            <Image src="/pls.png" width="100px" height="100px" />
+            <img className="me_image" src="/me1.jpg" />
+            <div className="about_context card">
+              <h2>Hello!</h2>
+              <p>My name is Matthew Leng, I was born and raised in New York</p>
+              <br />
+              <p>
+                When I am not learning, you can catch me playing video games,
+                reading, or training! (I am an olympic weightlifting athlete!)
+              </p>
+              <br />
+              <p>
+                Currently, I am dipping my feet in React frameworks (Gatsby &
+                Next.js), Typescript, Electron, and Firebase.
+              </p>
+            </div>
           </div>
         </Layout>
       </main>
@@ -21,7 +35,9 @@ export default function about() {
           min-width: 95vw;
           padding: 0 0.5rem;
           display: flex;
-          flex-direction: column;
+           {
+            /* flex-direction: column; */
+          }
           justify-content: center;
           align-items: center;
         }
@@ -34,74 +50,19 @@ export default function about() {
           align-items: center;
         }
 
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        .me_image {
+          height: 55vh;
+          width: auto;
+          border-radius: 50%;
+          border: 1px #121629 solid;
         }
-
-        footer img {
-          margin-left: 0.5rem;
-        }
-
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        .about_context {
+          margin-left: 2%;
         }
 
         a {
           color: inherit;
           text-decoration: none;
-        }
-
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
-
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
-
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
-
-        .title,
-        .description {
-          text-align: center;
-        }
-
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
-
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
-
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
         }
 
         .card {
@@ -111,7 +72,7 @@ export default function about() {
           text-align: left;
           color: inherit;
           text-decoration: none;
-          border: 1px solid #eaeaea;
+
           border-radius: 10px;
           transition: color 0.15s ease, border-color 0.15s ease;
         }

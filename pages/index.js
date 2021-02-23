@@ -14,17 +14,21 @@ export default function Home() {
       <main>
         <Layout title="Home | Matthew Leng">
           <div className="container">
-            <h2 className="title">
-              Hello! My name is <span className="title_name">Matthew Leng</span>
-            </h2>
-            <Typical
-              steps={[
-                'I am a former pre-school teacher turned software engineer!',
-                100
-              ]}
-              loop="2"
-              wrapper="h2"
-            />
+            <img src="/me.jpg" className="me_image" />
+            <div className="title">
+              <h2>
+                Hello! My name is{' '}
+                <span className="title_name">Matthew Leng</span>
+              </h2>
+              <Typical
+                steps={[
+                  'I am a former pre-school teacher turned software engineer!',
+                  100
+                ]}
+                loop="2"
+                wrapper="h6"
+              />
+            </div>
           </div>
         </Layout>
       </main>
@@ -35,7 +39,7 @@ export default function Home() {
           min-width: 95vw;
           padding: 0 0.5rem;
           display: flex;
-          flex-direction: column;
+
           justify-content: center;
           align-items: center;
         }
@@ -48,10 +52,16 @@ export default function Home() {
           align-items: center;
         }
         .title {
-          font-size: 3em;
+          margin-left: 2%;
+          font-size: 2em;
         }
         .title_name {
           color: #232946;
+        }
+        .me_image {
+          height: 55vh;
+          width: auto;
+          border-radius: 50%;
         }
         footer {
           width: 100%;
@@ -75,12 +85,6 @@ export default function Home() {
         a {
           color: inherit;
           text-decoration: none;
-        }
-
-        .title:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
         }
       `}</style>
 
