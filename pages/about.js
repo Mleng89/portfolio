@@ -19,7 +19,7 @@ export default function about() {
               <br />
               <p>
                 When I am not learning, you can find me playing video games,
-                reading, or training. (I am an olympic weightlifting athlete!)
+                reading, or training. (I am an Olympic weightlifting athlete!)
               </p>
               <br />
               <p>
