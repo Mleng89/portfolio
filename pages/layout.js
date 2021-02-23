@@ -16,15 +16,13 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
             <li>
               <Link href="/">
                 <a>Home</a>
-              </Link>{' '}
-              |
+              </Link>
             </li>
 
             <li>
               <Link href="/projects">
                 <a>Projects</a>
-              </Link>{' '}
-              |
+              </Link>
             </li>
 
             <li>
@@ -75,10 +73,13 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
           nav {
             padding-top: 5px;
             padding-right: 20px;
-            box-shadow: 10px 2px 10px grey;
+            box-shadow: 1px 1px 15px #121629;
             overflow: hidden;
             min-height: 55px;
             min-width: 100vw;
+          }
+          nav a {
+            font-size: 1.5em;
           }
           nav a:hover {
             background-color: #fffffe;
@@ -92,6 +93,9 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
             margin: 0;
             margin-top: 10px;
             padding: 0;
+          }
+          nav ul li {
+            margin-left: 50px;
           }
           footer {
             padding-top: 25px;
