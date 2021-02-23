@@ -55,7 +55,6 @@ export default function about() {
           height: 55vh;
           width: auto;
           border-radius: 50%;
-          border: 1px #121629 solid;
         }
         .about_context {
           margin-left: 2%;
