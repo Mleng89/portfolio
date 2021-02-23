@@ -12,6 +12,7 @@ export default function Home() {
       <main>
         <Layout title="Home | Matthew Leng">
           <div className="container">
+            <img src="/me.png" className="me_image" />
             <div className="title">
               <h2>
                 Hello! My name is{' '}
@@ -36,7 +37,7 @@ export default function Home() {
           min-width: 95vw;
           padding: 0 0.5rem;
           display: flex;
-
+          flex-direction: column;
           justify-content: center;
           align-items: center;
         }
@@ -55,7 +56,11 @@ export default function Home() {
         .title_name {
           color: #232946;
         }
-
+        .me_image {
+          height: 50vh;
+          width: auto;
+          border-radius: 50%;
+        }
         footer {
           width: 100%;
           height: 100px;
