@@ -12,7 +12,6 @@ export default function projects() {
       <main>
         <Layout title="Projects | Matthew Leng">
           <div className="container">
-            <Image src="/pls.png" width="100px" height="100px" />
             <h1>My Projects:</h1>
             <div className="project_container">
               <div className="card">
