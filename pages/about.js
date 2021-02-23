@@ -12,16 +12,19 @@ export default function about() {
             <img className="me_image" src="/me1.jpg" />
             <div className="about_context card">
               <h2>Hello!</h2>
-              <p>My name is Matthew Leng, I was born and raised in New York</p>
-              <br />
               <p>
-                When I am not learning, you can catch me playing video games,
-                reading, or training! (I am an olympic weightlifting athlete!)
+                My name is Matthew Leng, I was born and raised in New York City,
+                I currently reside in Brooklyn.
               </p>
               <br />
               <p>
-                Currently, I am dipping my feet in React frameworks (Gatsby &
-                Next.js), Typescript, Electron, and Firebase.
+                When I am not learning, you can find me playing video games,
+                reading, or training. (I am an olympic weightlifting athlete!)
+              </p>
+              <br />
+              <p>
+                Currently, I am dipping my feet in React frameworks such as
+                Gatsby & Next.js, Typescript, Electron, and Firebase.
               </p>
             </div>
           </div>
