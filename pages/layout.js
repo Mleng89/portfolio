@@ -40,7 +40,7 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
         <div className="footer_text">
           <div>
             <Link href="https://github.com/Mleng89">
-              <a>
+              <a className="github">
                 <Image src="/github.svg" width="20px" height="20px" />
               </a>
             </Link>
@@ -82,9 +82,9 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
             font-size: 1.5em;
           }
           nav a:hover {
-            background-color: #fffffe;
+            background-color: #0070f3;
             opacity: 0.4;
-            color: black;
+            font-color: white;
           }
           ul {
             display: flex;
@@ -99,7 +99,7 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
           }
           footer {
             padding-top: 25px;
-            background-color: #d4d8f0;
+            background-color: #181818;
             min-height: 100px;
           }
           .footer_text {
@@ -111,6 +111,10 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
           }
           .footer_name {
             text-align: center;
+            color: white;
+          }
+          .github {
+            filter: invert(100);
           }
           .button {
             margin-top: -10px;
