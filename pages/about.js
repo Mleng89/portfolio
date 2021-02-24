@@ -115,10 +115,7 @@ export default function about() {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
-          background: linear-gradient(
-            -55deg,
-         #9fa5d5, #e8f5c8)
-          );
+          background: linear-gradient(-55deg, #9fa5d5, #e8f5c8);
           background-size: 400% 400%;
           animation: gradient 15s ease infinite;
         }
