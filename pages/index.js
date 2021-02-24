@@ -11,6 +11,10 @@ export default function Home() {
 
       <main>
         <Layout title="Home | Matthew Leng">
+          <link
+            href="https://fonts.googleapis.com/css2?family=Chivo&family=Overpass&display=swap"
+            rel="stylesheet"
+          />
           <div className="container">
             <img src="/me.png" className="me_image" />
             <div className="title">
@@ -48,13 +52,17 @@ export default function Home() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          font-family: 'Chivo', sans-serif;
+        }
+        h2 {
+          font-family: 'Overpass', sans-serif;
         }
         .title {
           margin-left: 2%;
           font-size: 2em;
         }
         .title_name {
-          color: #232946;
+          color: #4e5265;
         }
         .me_image {
           height: 50vh;
@@ -91,10 +99,25 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-          background: linear-gradient(-55deg, #9fa5d5, #e8f5c8);
+          background: #b8c1ec;
+        }
+        * {
+          box-sizing: border-box;
+          color: #121629;
+        }
+      `}</style>
+    </div>
+  );
+}
+
+/*
+background: linear-gradient(
+            -55deg,
+            #9fa5d5,
+            #b8c1ec,
+            #eebbc3,
+            #eebbc3
+          );
           background-size: 400% 400%;
           animation: gradient 15s ease infinite;
         }
@@ -109,12 +132,4 @@ export default function Home() {
           100% {
             background-position: 0% 50%;
           }
-        }
-        * {
-          box-sizing: border-box;
-          color: #121629;
-        }
-      `}</style>
-    </div>
-  );
-}
+*/
