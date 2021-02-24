@@ -41,21 +41,21 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
           <div>
             <Link href="https://github.com/Mleng89">
               <a className="github">
-                <Image src="/github.svg" width="20px" height="20px" />
+                <img src="/github.svg" width="20px" height="20px" />
               </a>
             </Link>
           </div>
           <div>
             <Link href="https://www.linkedin.com/in/matthew-leng/">
               <a>
-                <Image src="/linkedin.svg" width="20px" height="20px" />
+                <img src="/linkedin.svg" width="20px" height="20px" />
               </a>
             </Link>
           </div>
           <div>
             <Link href="https://twitter.com/matthewleng">
               <a>
-                <Image src="/twitter.svg" width="20px" height="20px" />
+                <img src="/twitter.svg" width="20px" height="20px" />
               </a>
             </Link>
           </div>
@@ -73,13 +73,15 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
           nav {
             padding-top: 5px;
             padding-right: 20px;
-            box-shadow: 1px 1px 15px #121629;
+            box-shadow: 1px 1px #121629;
             overflow: hidden;
             min-height: 55px;
             min-width: 100vw;
+            background-color: #181818;
           }
           nav a {
             font-size: 1.5em;
+            color: white;
           }
           nav a:hover {
             background-color: #0070f3;
@@ -113,6 +115,9 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
             text-align: center;
             color: white;
           }
+          .footer_text > div > a > img:hover {
+            filter: invert(35%);
+          }
           .github {
             filter: invert(100);
           }
@@ -124,6 +129,9 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
             background-color: rgba(234, 244, 244);
             box-shadow: 0 0 1px 0;
             padding: 0.5rem;
+          }
+          .button:hover {
+            filter: invert(20%);
           }
         `}
       </style>
