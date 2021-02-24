@@ -13,7 +13,7 @@ export default function about() {
             rel="stylesheet"
           />
           <div className="container">
-            <img className="me_image" src="/me1.jpg" />
+            <img className="me_image" src="/media_me1.png" />
             <div className="about_context card">
               <h2>Hello!</h2>
               <p>
@@ -40,9 +40,6 @@ export default function about() {
           min-width: 95vw;
           padding: 0 0.5rem;
           display: flex;
-           {
-            /* flex-direction: column; */
-          }
           justify-content: center;
           align-items: center;
         }
@@ -119,6 +116,15 @@ export default function about() {
         * {
           box-sizing: border-box;
           color: #121629;
+        }
+        @media only screen and (max-width: 768px) {
+          .container {
+            display: flex;
+            flex-direction: column;
+          }
+          .me_image {
+            margin-top: 5vh;
+          }
         }
       `}</style>
     </div>
