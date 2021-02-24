@@ -11,6 +11,10 @@ export default function projects() {
 
       <main>
         <Layout title="Projects | Matthew Leng">
+          <link
+            href="https://fonts.googleapis.com/css2?family=Chivo&family=Overpass&display=swap"
+            rel="stylesheet"
+          />
           <div className="container">
             <h1>My Projects:</h1>
             <div className="project_container">
@@ -21,12 +25,12 @@ export default function projects() {
                   A mock wine e-commerce website. With login capability that
                   allows for persistent product storage in cart
                 </p>
-                <p>
+                <h4>
                   <br />
                   <b>
                     <u>Built on</u>: React, Redux, Express, PostgreSQL
                   </b>
-                </p>
+                </h4>
                 <br />
                 <Link href="https://github.com/Team-Kappa/GraceShopper">
                   <a>GitHub</a>
@@ -40,13 +44,13 @@ export default function projects() {
                 <h3>Notables</h3>
                 <h4>Description:</h4>
                 <p>A markdown editor that can run integrated code snippets.</p>
-                <p>
+                <h4>
                   <br />
                   <b>
                     <u>Built on</u>: HTML, CSS, JS, React, Redux, Express,
                     Docker
                   </b>
-                </p>
+                </h4>
                 <br />
                 <Link href="https://github.com/2011-libra/notables">
                   <a>GitHub</a>
@@ -60,12 +64,12 @@ export default function projects() {
                 <h3>Into the Abyss</h3>
                 <h4>Description:</h4>
                 <p>Dungeon crawling card game made in Phaser.js</p>
-                <p>
+                <h4>
                   <br />
                   <b>
                     <u>Built on</u>: HTML and Phaser.js
                   </b>
-                </p>
+                </h4>
                 <br />
                 <Link href="https://github.com/Mleng89/Stackathon">
                   <a>GitHub</a>
@@ -92,11 +96,15 @@ export default function projects() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          font-family: 'Chivo', sans-serif;
         }
         .project_container {
           display: flex;
         }
-
+        h1 {
+          font-family: 'Chivo';
+          font-size: 3.5em;
+        }
         a {
           color: inherit;
           text-decoration: none;
@@ -119,16 +127,19 @@ export default function projects() {
         }
 
         .card h3 {
+          font-family: 'Chivo';
           margin: 0 0 1rem 0;
           font-size: 2rem;
           color: #232946;
         }
         .card h4 {
+          font-family: 'Chivo';
           margin: 0 0 1rem 0;
           font-size: 1.2rem;
           color: #232946;
         }
         .card p {
+          font-family: 'Overpass';
           margin: 0;
           font-size: 1.2rem;
           line-height: 1.5;
@@ -141,24 +152,7 @@ export default function projects() {
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-          background: linear-gradient(-55deg, #9fa5d5, #e8f5c8);
-          background-size: 400% 400%;
-          animation: gradient 15s ease infinite;
-        }
-
-        @keyframes gradient {
-          0% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
-          100% {
-            background-position: 0% 50%;
-          }
+          background: #b8c1ec;
         }
         * {
           box-sizing: border-box;

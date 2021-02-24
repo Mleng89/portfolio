@@ -8,6 +8,10 @@ export default function about() {
       </Head>
       <main>
         <Layout title="About | Matthew Leng">
+          <link
+            href="https://fonts.googleapis.com/css2?family=Chivo&family=Overpass&display=swap"
+            rel="stylesheet"
+          />
           <div className="container">
             <img className="me_image" src="/me1.jpg" />
             <div className="about_context card">
@@ -49,6 +53,11 @@ export default function about() {
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          font-family: 'Chivo', sans-serif;
+        }
+        h2 {
+          font-size: 4em;
+          font-family: 'Chivo';
         }
 
         .me_image {
@@ -70,11 +79,8 @@ export default function about() {
           flex-basis: 45%;
           padding: 1.5rem;
           text-align: left;
-          color: inherit;
-          text-decoration: none;
 
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
+          text-decoration: none;
         }
 
         .card:hover,
@@ -84,15 +90,11 @@ export default function about() {
           border-color: #0070f3;
         }
 
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
         .card p {
           margin: 0;
-          font-size: 1.25rem;
+          font-size: 1.5rem;
           line-height: 1.5;
+          font-family: 'Overpass';
         }
 
         .logo {
@@ -112,26 +114,8 @@ export default function about() {
         body {
           padding: 0;
           margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-          background: linear-gradient(-55deg, #9fa5d5, #e8f5c8);
-          background-size: 400% 400%;
-          animation: gradient 15s ease infinite;
+          background: #b8c1ec;
         }
-
-        @keyframes gradient {
-          0% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
-          100% {
-            background-position: 0% 50%;
-          }
-        }
-
         * {
           box-sizing: border-box;
           color: #121629;

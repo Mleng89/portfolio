@@ -11,6 +11,10 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <header>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Chivo&family=Overpass&display=swap"
+          rel="stylesheet"
+        />
         <nav>
           <ul>
             <li>
@@ -77,7 +81,8 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
             overflow: hidden;
             min-height: 55px;
             min-width: 100vw;
-            background-color: #181818;
+            background-color: #232946;
+            font-type: 'Overpass';
           }
           nav a {
             font-size: 1.5em;
@@ -100,7 +105,7 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
           }
           footer {
             padding-top: 25px;
-            background-color: #181818;
+            background-color: #232946;
             min-height: 100px;
           }
           .footer_text {
@@ -113,6 +118,7 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
           .footer_name {
             text-align: center;
             color: white;
+            font-type: 'Chivo';
           }
           .footer_text > div > a > img:hover {
             filter: invert(35%);
