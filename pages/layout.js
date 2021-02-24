@@ -84,9 +84,8 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
             color: white;
           }
           nav a:hover {
-            background-color: #0070f3;
             opacity: 0.4;
-            font-color: white;
+            font-color: grey;
           }
           ul {
             display: flex;
