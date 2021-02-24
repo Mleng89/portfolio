@@ -158,6 +158,15 @@ export default function projects() {
           box-sizing: border-box;
           color: #121629;
         }
+         {
+          /* Mobile query */
+        }
+        @media only screen and (max-width: 768px) {
+          .project_container {
+            display: flex;
+            flex-direction: column;
+          }
+        }
       `}</style>
     </div>
   );
