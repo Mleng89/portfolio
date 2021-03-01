@@ -35,8 +35,15 @@ export default function projects() {
                 <h4>
                   <br />
                   <b>
-                    <u>Built on</u>: React, Redux, Express, PostgreSQL
+                    <p>
+                      {' '}
+                      <u>Built on</u>: React, Redux, Express, PostgreSQL
+                    </p>
                   </b>
+                  <br />
+                  <p>
+                    <u>Deployed on</u>: Heroku
+                  </p>
                 </h4>
                 <br />
                 <Link href="https://github.com/Team-Kappa/GraceShopper">
