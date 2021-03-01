@@ -17,8 +17,8 @@ export default function about() {
             <div className="about_context card">
               <h2>Hello!</h2>
               <p>
-                My name is Matthew Leng, I was born and raised in New York City,
-                I currently reside in Brooklyn.
+                My name is Matthew Leng, I was born and raised in Brooklyn, New
+                York.
               </p>
               <br />
               <p>
@@ -72,6 +72,7 @@ export default function about() {
         h2 {
           font-size: 4em;
           font-family: 'Chivo';
+          text-align: center;
         }
 
         .me_image {
