@@ -22,13 +22,30 @@ export default function about() {
               </p>
               <br />
               <p>
+                I was a pre-school teacher for almost a decade, although I
+                absolutely loved the profession, I felt something was missing in
+                my career and life. Since I had received my Masters in Early
+                Childhood Education, I knew what was missing, it was the craving
+                for a continuous education, I had a passion to constantly learn.
+              </p>
+              <br />
+              <p>
+                This is when I rediscovered my passion for technology, through
+                taking courses on Udemy and Codecademy I was able to apply for a
+                coding bootcamp, Fullstack Academy. Since finishing the
+                bootcamp, I am constantly learning and building applications
+                that can solve problems people have in their daily lives.
+              </p>
+              <br />
+              <p>
                 When I am not learning, you can find me playing video games,
                 reading, or training. (I am an Olympic weightlifting athlete!)
               </p>
               <br />
               <p>
                 Currently, I am dipping my feet in React frameworks such as
-                Gatsby & Next.js, Typescript, Electron, and Firebase.
+                Gatsby & Next.js. I am learning Typescript, Electron, and
+                Firebase as well!
               </p>
             </div>
           </div>

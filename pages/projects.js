@@ -22,8 +22,15 @@ export default function projects() {
                 <h3>The Cellar</h3>
                 <h4>Description:</h4>
                 <p>
-                  A mock wine e-commerce website. With login capability that
-                  allows for persistent product storage in cart
+                  This is a mock up of a wine e-commerce website. It was built
+                  to have two different experiences for users. A guest user and
+                  registered user, with the login capability, it allows for
+                  persistent product storage in the registered user's cart.
+                </p>
+                <br />
+                <p>
+                  There is also an administration user, or "super user" that has
+                  the ability to create, edit, and delete products.
                 </p>
                 <h4>
                   <br />
@@ -43,13 +50,28 @@ export default function projects() {
               <div className="card">
                 <h3>Notables</h3>
                 <h4>Description:</h4>
-                <p>A markdown editor that can run integrated code snippets.</p>
+                <p>
+                  A WYSIWYG where users can take notes in plain text AND create
+                  code snippets within their document!
+                </p>
+                <br />
+                <p>
+                  Users also have the ability to download their work into raw
+                  markdown, .md files. If they choose to, they can upload .md
+                  files that are in markdown format to become plain text.
+                </p>
                 <h4>
                   <br />
                   <b>
-                    <u>Built on</u>: HTML, CSS, JS, React, Redux, Express,
-                    Docker
+                    <p>
+                      <u>Built on</u>: HTML, CSS, JS, React, Redux, Express,
+                      Docker
+                    </p>
                   </b>
+                  <br />
+                  <p>
+                    <u>Deployed on</u>: AWS
+                  </p>
                 </h4>
                 <br />
                 <Link href="https://github.com/2011-libra/notables">
@@ -63,11 +85,18 @@ export default function projects() {
               <div className="card">
                 <h3>Into the Abyss</h3>
                 <h4>Description:</h4>
-                <p>Dungeon crawling card game made in Phaser.js</p>
+                <p>A dungeon crawling card game.</p>
+                <br />
+                <p>
+                  Users are presented a grid of 3 x 3, where there are other
+                  cards that are either monsters, armor, healing items, or a
+                  chest. The player is given a default character card that can
+                  be dragged using their mouse to make a move.
+                </p>
                 <h4>
                   <br />
                   <b>
-                    <u>Built on</u>: HTML and Phaser.js
+                    <u>Built on</u>: HTML and Javascript(Phaser.js).
                   </b>
                 </h4>
                 <br />
