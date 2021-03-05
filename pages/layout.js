@@ -50,6 +50,13 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
             </Link>
           </div>
           <div>
+            <Link href="https://mleng89.medium.com/">
+              <a className="medium">
+                <img src="/medium.svg" width="20px" height="20px" />
+              </a>
+            </Link>
+          </div>
+          <div>
             <Link href="https://www.linkedin.com/in/matthew-leng/">
               <a>
                 <img src="/linkedin.svg" width="20px" height="20px" />
@@ -123,7 +130,8 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
           .footer_text > div > a > img:hover {
             filter: invert(35%);
           }
-          .github {
+          .github,
+          .medium {
             filter: invert(100);
           }
           .button {
