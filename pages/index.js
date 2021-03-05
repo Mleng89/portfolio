@@ -37,7 +37,7 @@ export default function Home() {
 
       <style jsx>{`
         .container {
-          min-height: 100vh;
+          min-height: 90vh;
           min-width: 95vw;
           padding: 0 0.5rem;
           display: flex;

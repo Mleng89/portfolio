@@ -49,12 +49,54 @@ export default function about() {
               </p>
             </div>
           </div>
+          <h3>Tech stack:</h3>
+          <div className="tech-container">
+            <div className="tech-card">
+              <ul>
+                <u>
+                  <h4>Proficent:</h4>
+                </u>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>React</li>
+                <li>Express</li>
+                <li>Sequelize</li>
+                <li>Redux</li>
+                <li>Node.js</li>
+                <li>Git</li>
+                <li>Github</li>
+              </ul>
+            </div>
+            <div className="tech-card">
+              <ul>
+                <u>
+                  <h4>Knowledgeable:</h4>
+                </u>
+                <li>PostgreSQL</li>
+                <li>Firebase</li>
+                <li>Gatsby</li>
+                <li>Phaser.Js</li>
+                <li>Webpack</li>
+                <li>Material-UI</li>
+                <li>Bootstrap</li>
+              </ul>
+            </div>
+          </div>
         </Layout>
       </main>
       <style jsx>{`
         .container {
-          min-height: 100vh;
+          min-height: 80vh;
           min-width: 95vw;
+          padding: 0 0.5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .tech-container {
+          min-height: 25vh;
+          min-width: 15vw;
           padding: 0 0.5rem;
           display: flex;
           justify-content: center;
@@ -70,37 +112,52 @@ export default function about() {
           font-family: 'Chivo', sans-serif;
         }
         h2 {
-          font-size: 4em;
+          font-size: 2em;
           font-family: 'Chivo';
+          text-align: center;
+        }
+        h3 {
+          font-size: 3rem;
           text-align: center;
         }
 
         .me_image {
+          margin: 1rem;
+          padding: 0.5rem;
           height: 55vh;
           width: auto;
           border-radius: 50%;
         }
         .about_context {
-          margin-left: 2%;
-        }
-
-        a {
-          color: inherit;
-          text-decoration: none;
+          margin: 2%;
+          padding: 2%;
         }
 
         .card {
           margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
           text-align: left;
-
           text-decoration: none;
         }
+        .tech-card {
+          overflow: auto;
+          height: 30vh;
+          display: inline-block;
+          flex-basis: 15rem;
+          margin: 1rem;
+          text-align: left;
+          border: 1px solid #eaeaea;
+          border-radius: 10px;
+        }
+        .tech-card p {
+          text-align: left;
+        }
+        .tech-card ul {
+          list-style-type: none;
+        }
 
-        .card:hover,
-        .card:focus,
-        .card:active {
+        .tech-card:hover,
+        .tech-card:focus,
+        .tech-card:active {
           color: #0070f3;
           border-color: #0070f3;
         }
@@ -115,7 +172,6 @@ export default function about() {
         .logo {
           height: 1em;
         }
-
         @media (max-width: 600px) {
           .grid {
             width: 100%;
@@ -140,6 +196,7 @@ export default function about() {
             display: flex;
             flex-direction: column;
           }
+
           .me_image {
             margin-top: 5vh;
           }

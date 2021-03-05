@@ -118,7 +118,7 @@ export default function projects() {
 
       <style jsx>{`
         .container {
-          min-height: 100vh;
+          min-height: 80vh;
           min-width: 95vw;
           padding: 0 0.5rem;
           display: flex;
