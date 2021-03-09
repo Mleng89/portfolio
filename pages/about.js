@@ -49,6 +49,7 @@ export default function about() {
               </p>
             </div>
           </div>
+          <hr className="line_break" />
           <h3>Tech stack:</h3>
           <div className="tech-container">
             <div className="tech-card">
@@ -110,6 +111,17 @@ export default function about() {
           justify-content: center;
           align-items: center;
         }
+        hr {
+          border: 0;
+          height: 1px;
+          width: 10%;
+          position: relative;
+          margin: 30px auto;
+        }
+        .line_break {
+          background: #232946;
+        }
+
         .tech-container {
           min-height: 25vh;
           min-width: 15vw;
@@ -135,7 +147,8 @@ export default function about() {
         h3 {
           font-size: 3rem;
           text-align: center;
-          margin: 0;
+          margin-top: 0;
+          margin-bottom: 1%;
         }
 
         .me_image {
