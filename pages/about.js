@@ -44,8 +44,8 @@ export default function about() {
               <br />
               <p>
                 Currently, I am dipping my feet in React frameworks such as
-                Gatsby & Next.js. I am learning Typescript, Electron, and
-                Firebase as well!
+                Gatsby & Next.js. I am learning Typescript, Electron, Firebase,
+                and Python with Django & FastAPI as well!
               </p>
             </div>
           </div>
@@ -74,6 +74,7 @@ export default function about() {
                 <li>Gatsby</li>
                 <li>Next</li>
                 <li>Phaser</li>
+                <li>Electron</li>
                 <li>Redux</li>
                 <li>Express</li>
                 <li>Node</li>
