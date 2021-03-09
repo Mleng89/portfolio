@@ -55,7 +55,7 @@ export default function about() {
             <div className="tech-card">
               <ul>
                 <u>
-                  <h4>Web:</h4>
+                  <h4>Web</h4>
                 </u>
                 <li>HTML5</li>
                 <li>CSS3</li>
@@ -67,7 +67,7 @@ export default function about() {
             <div className="tech-card">
               <ul>
                 <u>
-                  <h4>Javascript:</h4>
+                  <h4>Javascript</h4>
                 </u>
                 <li>Typescript</li>
                 <li>React</li>
@@ -82,7 +82,7 @@ export default function about() {
             <div className="tech-card">
               <ul>
                 <u>
-                  <h4>Python:</h4>
+                  <h4>Python</h4>
                 </u>
                 <li>Python</li>
                 <li>Django</li>
@@ -92,7 +92,7 @@ export default function about() {
             <div className="tech-card">
               <ul>
                 <u>
-                  <h4>Database:</h4>
+                  <h4>Database</h4>
                 </u>
                 <li>Sequelize</li>
                 <li>PostgreSQL</li>
@@ -149,6 +149,9 @@ export default function about() {
           text-align: center;
           margin-top: 0;
           margin-bottom: 1%;
+        }
+        h4 {
+          font-size: 1.5rem;
         }
 
         .me_image {
