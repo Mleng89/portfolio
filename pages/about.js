@@ -135,6 +135,7 @@ export default function about() {
         h3 {
           font-size: 3rem;
           text-align: center;
+          margin: 0;
         }
 
         .me_image {

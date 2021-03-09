@@ -84,10 +84,10 @@ export default function projects() {
                 <Link href="https://github.com/2011-libra/notables">
                   <a>GitHub</a>
                 </Link>{' '}
-                | {''}
+                {/* | {''}
                 <Link href="http://3.128.61.184:8080/">
                   <a>Deployed Site</a>
-                </Link>
+                </Link> */}
               </div>
               <div className="card">
                 <h3>Into the Abyss</h3>
