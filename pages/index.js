@@ -23,20 +23,22 @@ export default function Home() {
                 Hello! My name is{' '}
                 <span className="title_name">Matthew Leng</span>
               </h2>
-              <Typical
-                steps={[
-                  'I am a former pre-school teacher turned software engineer!',
-                  100
-                ]}
-                loop="2"
-                wrapper="h6"
-              />
+              <div className="typical_media">
+                <Typical
+                  steps={[
+                    'I am a former pre-school teacher turned software engineer!',
+                    100
+                  ]}
+                  loop="2"
+                  wrapper="h6"
+                />
+              </div>
             </div>
-            <>
+            <div className="resume_button_media">
               <Link href="https://drive.google.com/file/d/1Ed4XwwX2W1k_E84mBQHw7fBeqYbUfy9z/view?usp=sharing">
                 <a className="resume_button bouncy">View my Resume</a>
               </Link>
-            </>
+            </div>
           </div>
         </Layout>
       </main>
@@ -155,10 +157,21 @@ export default function Home() {
           box-sizing: border-box;
           color: #121629;
         }
-        @media all and (max-width:30em){
- a.button3{
-  display:block;
-  margin:0.2em auto;
+       @media only screen and (max-width: 768px){
+         .container {
+            display: flex;
+            flex-direction: column;
+          }
+          .typical_media{
+            margin: 0;
+          }
+          .resume_button_media{
+             margin-bottom: 2em;
+          }
+          .me_image {
+            margin-top: 5vh;
+          }
+    
  }
       `}</style>
     </div>
