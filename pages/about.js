@@ -54,32 +54,48 @@ export default function about() {
             <div className="tech-card">
               <ul>
                 <u>
-                  <h4>Proficent:</h4>
+                  <h4>Web:</h4>
                 </u>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-                <li>React</li>
-                <li>Express</li>
-                <li>Sequelize</li>
-                <li>Redux</li>
-                <li>Node.js</li>
-                <li>Git</li>
-                <li>Github</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>REST API</li>
+                <li>Material-UI</li>
+                <li>Bootstrap</li>
               </ul>
             </div>
             <div className="tech-card">
               <ul>
                 <u>
-                  <h4>Knowledgeable:</h4>
+                  <h4>Javascript:</h4>
                 </u>
+                <li>Typescript</li>
+                <li>React</li>
+                <li>Gatsby</li>
+                <li>Next</li>
+                <li>Phaser</li>
+                <li>Redux</li>
+                <li>Express</li>
+                <li>Node</li>
+              </ul>
+            </div>
+            <div className="tech-card">
+              <ul>
+                <u>
+                  <h4>Python:</h4>
+                </u>
+                <li>Python</li>
+                <li>Django</li>
+                <li>FastAPI</li>
+              </ul>
+            </div>
+            <div className="tech-card">
+              <ul>
+                <u>
+                  <h4>Database:</h4>
+                </u>
+                <li>Sequelize</li>
                 <li>PostgreSQL</li>
                 <li>Firebase</li>
-                <li>Gatsby</li>
-                <li>Phaser.Js</li>
-                <li>Webpack</li>
-                <li>Material-UI</li>
-                <li>Bootstrap</li>
               </ul>
             </div>
           </div>
@@ -140,7 +156,7 @@ export default function about() {
         }
         .tech-card {
           overflow: auto;
-          height: 30vh;
+          height: 40vh;
           display: inline-block;
           flex-basis: 15rem;
           margin: 1rem;
@@ -196,7 +212,14 @@ export default function about() {
             display: flex;
             flex-direction: column;
           }
-
+          .tech-container {
+            display: flex;
+            flex-direction: column;
+          }
+          .tech-card {
+            height: 40vh;
+            width: 40vw;
+          }
           .me_image {
             margin-top: 5vh;
           }
