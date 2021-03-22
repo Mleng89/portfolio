@@ -84,6 +84,10 @@ export default function projects() {
                 <Link href="https://github.com/2011-libra/notables">
                   <a>GitHub</a>
                 </Link>{' '}
+                | {''}
+                <Link href="https://youtu.be/cvxI8c0_3U4">
+                  <a>Presentation & Demo</a>
+                </Link>
                 {/* | {''}
                 <Link href="http://3.128.61.184:8080/">
                   <a>Deployed Site</a>
@@ -109,6 +113,9 @@ export default function projects() {
                 <br />
                 <Link href="https://github.com/Mleng89/Stackathon">
                   <a>GitHub</a>
+                </Link>
+                <Link href="https://mleng89.github.io/Stackathon/">
+                  <a>Deployed site</a>
                 </Link>
               </div>
             </div>
