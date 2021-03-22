@@ -113,7 +113,8 @@ export default function projects() {
                 <br />
                 <Link href="https://github.com/Mleng89/Stackathon">
                   <a>GitHub</a>
-                </Link>
+                </Link>{' '}
+                | {''}
                 <Link href="https://mleng89.github.io/Stackathon/">
                   <a>Deployed site</a>
                 </Link>
