@@ -169,8 +169,9 @@ export default function about() {
 
         .card {
           margin: 1rem;
+          flex-basis: 100%;
+          padding: 1.5rem;
           text-align: left;
-          text-decoration: none;
         }
         .tech-card {
           overflow: auto;
@@ -219,7 +220,7 @@ export default function about() {
         body {
           padding: 0;
           margin: 0;
-          background: #b8c1ec;
+          background: white;
         }
         * {
           box-sizing: border-box;

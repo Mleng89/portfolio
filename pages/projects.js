@@ -196,7 +196,7 @@ export default function projects() {
         body {
           padding: 0;
           margin: 0;
-          background: #b8c1ec;
+          background: white;
         }
         * {
           box-sizing: border-box;
