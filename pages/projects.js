@@ -19,42 +19,6 @@ export default function projects() {
             <h1>My Projects:</h1>
             <div className="project_container">
               <div className="card">
-                <h3>The Cellar</h3>
-                <h4>Description:</h4>
-                <p>
-                  This is a mock up of a wine e-commerce website. It was built
-                  to have two different experiences for users. A guest user and
-                  registered user, with the login capability, it allows for
-                  persistent product storage in the registered user's cart.
-                </p>
-                <br />
-                <p>
-                  There is also an administration user, or "super user" that has
-                  the ability to create, edit, and delete products.
-                </p>
-                <h4>
-                  <br />
-                  <b>
-                    <p>
-                      {' '}
-                      <u>Built on</u>: React, Redux, Express, PostgreSQL
-                    </p>
-                  </b>
-                  <br />
-                  <p>
-                    <u>Deployed on</u>: Heroku
-                  </p>
-                </h4>
-                <br />
-                <Link href="https://github.com/Team-Kappa/GraceShopper">
-                  <a>GitHub</a>
-                </Link>{' '}
-                | {''}
-                <Link href="https://thecellar.herokuapp.com/">
-                  <a>Deployed site</a>
-                </Link>
-              </div>
-              <div className="card">
                 <h3>Notables</h3>
                 <h4>Description:</h4>
                 <p>
@@ -94,6 +58,42 @@ export default function projects() {
                 </Link> */}
               </div>
               <div className="card">
+                <h3>The Cellar</h3>
+                <h4>Description:</h4>
+                <p>
+                  This is a mock up of a wine e-commerce website. It was built
+                  to have two different experiences for users. A guest user and
+                  registered user, with the login capability, it allows for
+                  persistent product storage in the registered user's cart.
+                </p>
+                <br />
+                <p>
+                  There is also an administration user, or "super user" that has
+                  the ability to create, edit, and delete products.
+                </p>
+                <h4>
+                  <br />
+                  <b>
+                    <p>
+                      {' '}
+                      <u>Built on</u>: React, Redux, Express, PostgreSQL
+                    </p>
+                  </b>
+                  <br />
+                  <p>
+                    <u>Deployed on</u>: Heroku
+                  </p>
+                </h4>
+                <br />
+                <Link href="https://github.com/Team-Kappa/GraceShopper">
+                  <a>GitHub</a>
+                </Link>{' '}
+                | {''}
+                <Link href="https://thecellar.herokuapp.com/">
+                  <a>Deployed site</a>
+                </Link>
+              </div>
+              <div className="card">
                 <h3>Into the Abyss</h3>
                 <h4>Description:</h4>
                 <p>A dungeon crawling card game.</p>
@@ -119,6 +119,64 @@ export default function projects() {
                   <a>Deployed site</a>
                 </Link>
               </div>
+            </div>
+          </div>
+          <h2>In the works:</h2>
+          <div className="project_container">
+            {/* Edubase */}
+            <div className="card">
+              <h3>EduBase</h3>
+              <h4>Description:</h4>
+              <p>
+                A platform for all teachers to upload and share lesson plans.
+                Will have the ability to also leave comments & feedback.
+              </p>
+              <br />
+              <p>Features (Work in progress):</p>
+              <br />
+              <p>
+                • Calendar unique to each user that will allow for, "todos" and
+                better help with organization.
+              </p>
+              <h4>
+                <br />
+                <b>
+                  <p>
+                    <u>Built on</u>: React & Firebase
+                  </p>
+                </b>
+                <br />
+              </h4>
+
+              <Link href="https://github.com/Mleng89/edubase">
+                <a>GitHub</a>
+              </Link>
+            </div>
+            {/* Jobmates */}
+            <div className="card">
+              <h3>Jobmate</h3>
+              <h4>Description:</h4>
+              <p>
+                To help frustrated job seekers actually filter jobs to tailor
+                their needs! This platform will help job searching easier and
+                more time efficent.
+              </p>
+              <br />
+              <p>Features (Work in progress):</p>
+              <br />
+              <p>
+                • In browser plug-in to remind users follow-up with job
+                applications
+              </p>
+              <h4>
+                <br />
+                <b>
+                  <p>
+                    <u>Built on</u>: React-Typescript, Python, & Django
+                  </p>
+                </b>
+                <br />
+              </h4>
             </div>
           </div>
         </Layout>
@@ -148,6 +206,11 @@ export default function projects() {
         h1 {
           font-family: 'Chivo';
           font-size: 3.5em;
+        }
+        h2 {
+          text-align: center;
+          font-family: 'Chivo';
+          font-size: 2.5em;
         }
         a {
           color: inherit;
