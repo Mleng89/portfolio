@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import Image from 'next/image';
 
 export default function Layout({ children, title = 'Matthew Leng' }) {
   return (
@@ -36,7 +35,7 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
             </li>
             <li>
               <Link href="https://mleng89.medium.com/">
-                <a>Blog</a>
+                <a target="_blank">Blog</a>
               </Link>
             </li>
           </ul>
