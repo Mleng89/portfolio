@@ -34,6 +34,11 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
                 <a>About</a>
               </Link>
             </li>
+            <li>
+              <Link href="https://mleng89.medium.com/">
+                <a>Blog</a>
+              </Link>
+            </li>
           </ul>
         </nav>
       </header>
