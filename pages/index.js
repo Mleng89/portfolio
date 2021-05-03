@@ -35,7 +35,7 @@ export default function Home() {
               </div>
             </div>
             <div className="resume_button_media">
-              <Link href="https://drive.google.com/file/d/1Ed4XwwX2W1k_E84mBQHw7fBeqYbUfy9z/view?usp=sharing">
+              <Link href="https://drive.google.com/file/d/1yG6JVxIqckgsiOMFb6Q57xiQGZw8v8VD/view?usp=sharing">
                 <a className="resume_button bouncy">View my Resume</a>
               </Link>
             </div>
