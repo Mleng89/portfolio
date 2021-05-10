@@ -43,9 +43,8 @@ export default function about() {
               </p>
               <br />
               <p>
-                Currently, I am dipping my feet in React frameworks such as
-                Gatsby & Next.js. I am learning Typescript, Electron, Firebase,
-                and Python with Django & FastAPI as well!
+                Currently, I am dipping my feet in Typescript, Firebase, and
+                Python!
               </p>
             </div>
           </div>
