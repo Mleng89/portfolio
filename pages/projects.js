@@ -44,6 +44,7 @@ export default function projects() {
                     <u>Deployed on</u>: AWS
                   </p>
                 </h4>
+                <img src="/notables.png" />
                 <br />
                 <Link href="https://github.com/2011-libra/notables">
                   <a>GitHub</a>
@@ -84,6 +85,7 @@ export default function projects() {
                     <u>Deployed on</u>: Heroku
                   </p>
                 </h4>
+                <img src="/thecellar.png" />
                 <br />
                 <Link href="https://github.com/Team-Kappa/GraceShopper">
                   <a>GitHub</a>
@@ -110,6 +112,7 @@ export default function projects() {
                     <u>Built on</u>: HTML and Javascript(Phaser.js).
                   </b>
                 </h4>
+                <img src="/IntoTheAbyss.png" />
                 <br />
                 <Link href="https://github.com/Mleng89/Stackathon">
                   <a>GitHub</a>
@@ -192,6 +195,10 @@ export default function projects() {
           justify-content: center;
           align-items: center;
         }
+        img {
+          height: 15rem;
+          border-radius: 10px;
+        }
         main {
           flex: 1;
           display: flex;
@@ -199,6 +206,9 @@ export default function projects() {
           justify-content: center;
           align-items: center;
           font-family: 'Chivo', sans-serif;
+        }
+        a {
+          color: 'red';
         }
         .project_container {
           display: flex;
@@ -268,7 +278,7 @@ export default function projects() {
          {
           /* Mobile query */
         }
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 1450px) {
           .project_container {
             display: flex;
             flex-direction: column;

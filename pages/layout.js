@@ -105,7 +105,7 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
           }
           ul {
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             list-style-type: none;
             margin: 0;
             margin-top: 10px;
