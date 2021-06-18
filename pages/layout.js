@@ -91,7 +91,7 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
             box-shadow: 1px 1px #121629;
             overflow: hidden;
             min-height: 55px;
-            width: 99vw;
+            width: 99.1vw;
             background-color: #303f9f;
             font-type: 'Overpass';
           }
@@ -149,6 +149,13 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
           }
           .button:hover {
             filter: invert(20%);
+          }
+        `}
+      </style>
+      <style jsx global>
+        {`
+          body {
+            overflow-x: hidden;
           }
         `}
       </style>
