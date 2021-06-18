@@ -117,6 +117,7 @@ export default function Home() {
           filter: invert(80%);
         }
         .me_image {
+          margin-top: 1rem;
           height: 50vh;
           width: auto;
           border-radius: 50%;

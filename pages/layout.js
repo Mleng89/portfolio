@@ -91,7 +91,7 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
             box-shadow: 1px 1px #121629;
             overflow: hidden;
             min-height: 55px;
-            min-width: 100vw;
+            width: 99vw;
             background-color: #232946;
             font-type: 'Overpass';
           }

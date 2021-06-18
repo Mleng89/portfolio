@@ -225,7 +225,7 @@ export default function about() {
           box-sizing: border-box;
           color: #121629;
         }
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 1000px) {
           .container {
             display: flex;
             flex-direction: column;
