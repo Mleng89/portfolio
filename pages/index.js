@@ -70,7 +70,7 @@ export default function Home() {
           font-size: 2em;
         }
         .title_name {
-          color: #4e5265;
+          color: #af3d4e;
         }
         .bouncy {
            animation: bouncy 10s infinite linear;
@@ -109,12 +109,12 @@ export default function Home() {
            font-family: 'Chivo', sans-serif;
            font-weight: 300;
            color: #ffffff;
-           background-color: #232946;
+           background-color: #af3d4e;
            text-align: center;
            transition: all 0.2s;
         }
         a.resume_button:hover {
-          filter: invert(80%);
+          filter: invert(20%);
         }
         .me_image {
           margin-top: 1rem;
