@@ -92,7 +92,7 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
             overflow: hidden;
             min-height: 55px;
             width: 99vw;
-            background-color: #232946;
+            background-color: #303f9f;
             font-type: 'Overpass';
           }
           nav a {
@@ -116,7 +116,7 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
           }
           footer {
             padding-top: 25px;
-            background-color: #232946;
+            background-color: #303f9f;
             min-height: 100px;
           }
           .footer_text {
