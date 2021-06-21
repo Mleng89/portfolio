@@ -133,9 +133,9 @@ export default function projects() {
               <h3>
                 <Link href="https://github.com/Mleng89/edubase">
                   <a>GitHub</a>
-                </Link>{' '}
-                | {''}
-                <Link href="https://github.com/Mleng89/edubase">
+                </Link>
+                <br />
+                <Link href="https://mleng89.github.io/edubase/#/">
                   <a>Deployed</a>
                 </Link>
               </h3>
