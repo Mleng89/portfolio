@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Image from 'next/image';
 import Layout from './layout';
 export default function projects() {
   return (
@@ -16,20 +15,13 @@ export default function projects() {
             rel="stylesheet"
           />
           <div className="container">
-            <h1>My Projects:</h1>
+            <h1>Selected Projects:</h1>
             <div className="project_container">
               <div className="card">
                 <h3>Notables</h3>
-                <h4>Description:</h4>
                 <p>
                   A WYSIWYG where users can take notes in plain text AND create
                   code snippets within their document!
-                </p>
-                <br />
-                <p>
-                  Users also have the ability to download their work into raw
-                  markdown, .md files. If they choose to, they can upload .md
-                  files that are in markdown format to become plain text.
                 </p>
                 <h4>
                   <br />
@@ -40,19 +32,22 @@ export default function projects() {
                     </p>
                   </b>
                   <br />
-                  <p>
-                    <u>Deployed on</u>: AWS
-                  </p>
                 </h4>
-                <img src="/notables.png" />
+                <a
+                  href="https://github.com/2011-libra/notables"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img className="image_pointer" src="/notables.png" />
+                </a>
                 <br />
-                <Link href="https://github.com/2011-libra/notables">
-                  <a>GitHub</a>
-                </Link>{' '}
-                | {''}
-                <Link href="https://youtu.be/cvxI8c0_3U4">
-                  <a>Presentation & Demo</a>
-                </Link>
+                <h4>
+                  <hr />
+
+                  <Link href="https://youtu.be/cvxI8c0_3U4">
+                    <a>Click here for the presentation & demo!</a>
+                  </Link>
+                </h4>
                 {/* | {''}
                 <Link href="http://3.128.61.184:8080/">
                   <a>Deployed Site</a>
@@ -60,67 +55,51 @@ export default function projects() {
               </div>
               <div className="card">
                 <h3>The Cellar</h3>
-                <h4>Description:</h4>
-                <p>
-                  This is a mock up of a wine e-commerce website. It was built
-                  to have two different experiences for users. A guest user and
-                  registered user, with the login capability, it allows for
-                  persistent product storage in the registered user's cart.
-                </p>
-                <br />
-                <p>
-                  There is also an administration user, or "super user" that has
-                  the ability to create, edit, and delete products.
-                </p>
+                <p>E-commerce website for the purcahse of wine!</p>
+
                 <h4>
                   <br />
                   <b>
                     <p>
-                      {' '}
                       <u>Built on</u>: React, Redux, Express, PostgreSQL
                     </p>
                   </b>
                   <br />
-                  <p>
-                    <u>Deployed on</u>: Heroku
-                  </p>
                 </h4>
-                <img src="/thecellar.png" />
+                <a
+                  href="https://thecellar.herokuapp.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src="/thecellar.png" className="image_pointer" />
+                </a>
                 <br />
-                <Link href="https://github.com/Team-Kappa/GraceShopper">
-                  <a>GitHub</a>
-                </Link>{' '}
-                | {''}
-                <Link href="https://thecellar.herokuapp.com/">
-                  <a>Deployed site</a>
-                </Link>
+                <h3></h3>
               </div>
               <div className="card">
                 <h3>Into the Abyss</h3>
-                <h4>Description:</h4>
                 <p>A dungeon crawling card game.</p>
-                <br />
-                <p>
+
+                {/* <p>
                   Users are presented a grid of 3 x 3, where there are other
                   cards that are either monsters, armor, healing items, or a
                   chest. The player is given a default character card that can
                   be dragged using their mouse to make a move.
-                </p>
+                </p> */}
                 <h4>
                   <br />
                   <b>
                     <u>Built on</u>: HTML and Javascript(Phaser.js).
                   </b>
                 </h4>
-                <img src="/IntoTheAbyss.png" />
+                <a
+                  href="https://mleng89.github.io/Stackathon/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img src="/IntoTheAbyss.png" className="image_pointer" />
+                </a>
                 <br />
-                <Link href="https://github.com/Mleng89/Stackathon">
-                  <a>GitHub</a>
-                </Link>{' '}
-                | {''}
-                <Link href="https://mleng89.github.io/Stackathon/">
-                  <a>Deployed site</a>
-                </Link>
               </div>
             </div>
           </div>
@@ -129,13 +108,14 @@ export default function projects() {
             {/* Edubase */}
             <div className="card">
               <h3>EduBase</h3>
-              <h4>Description:</h4>
               <p>
                 A platform for all teachers to upload and share lesson plans.
                 Will have the ability to also leave comments & feedback.
               </p>
               <br />
-              <p>Features (Work in progress):</p>
+              <u>
+                <p>Features (Work in progress):</p>
+              </u>
               <br />
               <p>
                 • Calendar unique to each user that will allow for, "todos" and
@@ -150,22 +130,28 @@ export default function projects() {
                 </b>
                 <br />
               </h4>
-
-              <Link href="https://github.com/Mleng89/edubase">
-                <a>GitHub</a>
-              </Link>
+              <h3>
+                <Link href="https://github.com/Mleng89/edubase">
+                  <a>GitHub</a>
+                </Link>{' '}
+                | {''}
+                <Link href="https://github.com/Mleng89/edubase">
+                  <a>Deployed</a>
+                </Link>
+              </h3>
             </div>
             {/* Jobmates */}
             <div className="card">
               <h3>Jobmate</h3>
-              <h4>Description:</h4>
               <p>
                 To help frustrated job seekers actually filter jobs to tailor
                 their needs! This platform will help job searching easier and
                 more time efficent.
               </p>
               <br />
-              <p>Features (Work in progress):</p>
+              <u>
+                <p>Features (Work in progress):</p>
+              </u>
               <br />
               <p>
                 • In browser plug-in to remind users follow-up with job
@@ -180,6 +166,11 @@ export default function projects() {
                 </b>
                 <br />
               </h4>
+              <h3>
+                <Link href="https://github.com/kylejb/JobMate">
+                  <a>GitHub</a>
+                </Link>
+              </h3>
             </div>
           </div>
         </Layout>
@@ -229,20 +220,31 @@ export default function projects() {
 
         .card {
           margin: 1rem;
-          flex-basis: 45%;
+          flex-grow: 1;
+          flex-basis: 40%;
           padding: 1.5rem;
-          text-align: left;
           border: 1px solid #eaeaea;
           border-radius: 10px;
+          text-align: center;
         }
 
-        .card:hover,
-        .card:focus,
-        .card:active {
+        .project_container:hover .card:hover {
+          transform: scale(1);
+          filter: blur(0px);
+          opacity: 1;
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
             0 2px 10px 0 rgba(0, 0, 0, 0.12);
         }
+        .project_container:hover .card {
+          filter: blur(1px);
+          opacity: 0.5;
+          transform: scale(0.98);
+          box-shadow: none;
+        }
 
+        .image_pointer:hover {
+          border-color: #000;
+        }
         .card h3 {
           font-family: 'Chivo';
           margin: 0 0 1rem 0;
@@ -255,6 +257,7 @@ export default function projects() {
           font-size: 1.2rem;
           color: #232946;
         }
+
         .card p {
           font-family: 'Overpass';
           margin: 0;
