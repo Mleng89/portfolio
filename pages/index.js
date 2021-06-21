@@ -102,7 +102,7 @@ export default function Home() {
         a.resume_button {
            display: inline-block;
            padding: 1em 2em;
-           margin: 0 0.3em 0.3em 0;
+           margin: 0 0.3em 1em 0;
            border-radius: 1em;
            box-sizing: border-box;
            text-decoration: none;
