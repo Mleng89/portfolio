@@ -239,8 +239,8 @@ export default function projects() {
         .card:hover,
         .card:focus,
         .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+            0 2px 10px 0 rgba(0, 0, 0, 0.12);
         }
 
         .card h3 {

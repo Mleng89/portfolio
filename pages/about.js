@@ -60,7 +60,6 @@ export default function about() {
                 <li>CSS3</li>
                 <li>REST API</li>
                 <li>Material-UI</li>
-                <li>Bootstrap</li>
               </ul>
             </div>
             <div className="tech-card">
@@ -72,14 +71,12 @@ export default function about() {
                 <li>React</li>
                 <li>Gatsby</li>
                 <li>Next</li>
-                <li>Phaser</li>
-                <li>Electron</li>
                 <li>Redux</li>
                 <li>Express</li>
                 <li>Node</li>
               </ul>
             </div>
-            <div className="tech-card">
+            {/* <div className="tech-card">
               <ul>
                 <u>
                   <h4>Python</h4>
@@ -88,7 +85,7 @@ export default function about() {
                 <li>Django</li>
                 <li>FastAPI</li>
               </ul>
-            </div>
+            </div> */}
             <div className="tech-card">
               <ul>
                 <u>
@@ -192,8 +189,8 @@ export default function about() {
         .tech-card:hover,
         .tech-card:focus,
         .tech-card:active {
-          color: #0070f3;
-          border-color: #0070f3;
+          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
+            0 2px 10px 0 rgba(0, 0, 0, 0.12);
         }
 
         .card p {
