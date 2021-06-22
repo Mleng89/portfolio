@@ -36,7 +36,8 @@ export default function Home() {
             </div>
             <div className="resume_button_media">
               <Link href="https://drive.google.com/file/d/1yG6JVxIqckgsiOMFb6Q57xiQGZw8v8VD/view?usp=sharing">
-                <a className="resume_button bouncy">View my Resume</a>
+                <a className="resume_button bouncy" target="_blank"
+                  rel="noreferrer">View my Resume </a>
               </Link>
             </div>
           </div>
@@ -114,7 +115,7 @@ export default function Home() {
            transition: all 0.2s;
         }
         a.resume_button:hover {
-          filter: invert(20%);
+          filter: invert(10%);
         }
         .me_image {
           margin-top: 1rem;
@@ -141,10 +142,10 @@ export default function Home() {
           align-items: center;
         }
 
-        a {
+        {/* a {
           color: inherit;
           text-decoration: none;
-        }
+        } */}
       `}</style>
 
       <style jsx global>{`
