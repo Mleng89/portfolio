@@ -36,7 +36,8 @@ export default function Home() {
             </div>
             <div className="resume_button_media">
               <Link href="https://drive.google.com/file/d/1yG6JVxIqckgsiOMFb6Q57xiQGZw8v8VD/view?usp=sharing">
-                <a className="resume_button bouncy">View my Resume</a>
+                <a className="resume_button" target="_blank"
+                  rel="noreferrer">View my Resume </a>
               </Link>
             </div>
           </div>
@@ -72,37 +73,11 @@ export default function Home() {
         .title_name {
           color: #af3d4e;
         }
-        .bouncy {
-           animation: bouncy 10s infinite linear;
-           position: relative;
-        }
-        @keyframes bouncy {
-           0% {
-            top: 0em;
-          }
-           40% {
-            top: 0em;
-          }
-           43% {
-            top: -0.9em;
-          }
-           46% {
-            top: 0em;
-          }
-           48% {
-            top: -0.4em;
-          }
-           50% {
-            top: 0em;
-          }
-           100% {
-            top: 0em;
-          }
-        }
+
         a.resume_button {
            display: inline-block;
            padding: 1em 2em;
-           margin: 0 0.3em 1em 0;
+           margin: 0 0.3em 1.5em 0;
            border-radius: 1em;
            box-sizing: border-box;
            text-decoration: none;
@@ -114,7 +89,8 @@ export default function Home() {
            transition: all 0.2s;
         }
         a.resume_button:hover {
-          filter: invert(20%);
+          filter: saturate(1.5) drop-shadow(5px 5px rgba(0, 0, 0, 0.16));
+         
         }
         .me_image {
           margin-top: 1rem;
@@ -141,10 +117,10 @@ export default function Home() {
           align-items: center;
         }
 
-        a {
+        {/* a {
           color: inherit;
           text-decoration: none;
-        }
+        } */}
       `}</style>
 
       <style jsx global>{`
@@ -201,4 +177,32 @@ background: linear-gradient(
           100% {
             background-position: 0% 50%;
           }
+
+                  .bouncy {
+           animation: bouncy 10s infinite linear;
+           position: relative;
+        }
+        @keyframes bouncy {
+           0% {
+            top: 0em;
+          }
+           40% {
+            top: 0em;
+          }
+           43% {
+            top: -0.9em;
+          }
+           46% {
+            top: 0em;
+          }
+           48% {
+            top: -0.4em;
+          }
+           50% {
+            top: 0em;
+          }
+           100% {
+            top: 0em;
+          }
+        }
 */

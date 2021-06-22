@@ -131,13 +131,17 @@ export default function projects() {
                 <br />
               </h4>
               <h3>
-                <Link href="https://github.com/Mleng89/edubase">
+                <a href="https://github.com/Mleng89/edubase"
+                target="_blank"
+                  rel="noreferrer">
                   <a>GitHub</a>
-                </Link>
+                </a>
                 <br />
-                <Link href="https://mleng89.github.io/edubase/#/">
-                  <a>Deployed</a>
-                </Link>
+                <a href="https://mleng89.github.io/edubase/#/"
+                target="_blank"
+                  rel="noreferrer">
+                  Deployed
+                </a>
               </h3>
             </div>
             {/* Jobmates */}
@@ -167,9 +171,9 @@ export default function projects() {
                 <br />
               </h4>
               <h3>
-                <Link href="https://github.com/kylejb/JobMate">
-                  <a>GitHub</a>
-                </Link>
+                <a href="https://github.com/kylejb/JobMate" target="_blank" rel="noreferrer">
+                  GitHub
+                </a>
               </h3>
             </div>
           </div>
