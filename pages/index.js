@@ -35,7 +35,7 @@ export default function Home() {
               </div>
             </div>
             <div className="resume_button_media">
-              <Link href="https://drive.google.com/file/d/1dejnbKPQO3Ikg3x5V7QXvodEiFDFlSBj/view?usp=sharing">
+              <Link href="https://drive.google.com/file/d/1s2ehplrdwaQKTHoqO8EL0FZkZZp3tic8/view?usp=sharing">
                 <a className="resume_button" target="_blank" rel="noreferrer">
                   View my Resume{' '}
                 </a>
@@ -150,7 +150,7 @@ export default function Home() {
           .me_image {
             margin-top: 5vh;
           }
-    
+
  }
       `}</style>
     </div>
