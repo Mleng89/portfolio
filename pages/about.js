@@ -23,18 +23,18 @@ export default function about() {
               <br />
               <p>
                 I was a pre-school teacher for almost a decade, although I
-                absolutely loved the profession, I felt something was missing in
-                my career and life. Since I had received my Masters in Early
-                Childhood Education, I knew what was missing, it was the craving
-                for a continuous education, I had a passion to constantly learn.
+                absolutely loved the profession, I felt I could make a bigger
+                impact. I wanted to combined by love for educaiton, learning,
+                and technology.
               </p>
               <br />
               <p>
-                This is when I rediscovered my passion for technology, through
-                taking courses on Udemy and Codecademy I was able to apply for a
-                coding bootcamp, Fullstack Academy. Since finishing the
-                bootcamp, I am constantly learning and building applications
-                that can solve problems people have in their daily lives.
+                This is when I rediscovered my passion for software engineering.
+                I took various courses on Udemy and Codecademy, but wanted a
+                more structured learning environment, which led me to attend
+                Fullstack Academy. Since finishing the bootcamp, I am still
+                learning and building applications that can solve problems
+                people have in their daily lives to make a bigger impact!
               </p>
               <br />
               <p>
@@ -43,8 +43,8 @@ export default function about() {
               </p>
               <br />
               <p>
-                Currently, I am dipping my feet in Typescript, Firebase, and
-                Python!
+                Currently, I am learning C#, I wanted to learn a more strongly
+                typed language!
               </p>
             </div>
           </div>
@@ -54,46 +54,53 @@ export default function about() {
             <div className="tech-card">
               <ul>
                 <u>
-                  <h4>Web</h4>
+                  <h4>Languages</h4>
                 </u>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>REST API</li>
-                <li>Material-UI</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
+                <li>Python</li>
+                <li>C#</li>
+                <li>SQL</li>
               </ul>
             </div>
             <div className="tech-card">
               <ul>
                 <u>
-                  <h4>Javascript</h4>
+                  <h4>Libraries & Frameworks</h4>
                 </u>
-                <li>Typescript</li>
-                <li>React</li>
-                <li>Gatsby</li>
-                <li>Next</li>
-                <li>Redux</li>
+                <li>Django</li>
+                <li>Node.js</li>
                 <li>Express</li>
-                <li>Node</li>
+                <li>Jest</li>
+                <li>ReactJS</li>
+                <li>Gatsby</li>
+                <li>NextJS</li>
+                <li>Redux</li>
+                <li>React Native</li>
+                <li>.NET</li>
               </ul>
             </div>
-            {/* <div className="tech-card">
-              <ul>
-                <u>
-                  <h4>Python</h4>
-                </u>
-                <li>Python</li>
-                <li>Django</li>
-                <li>FastAPI</li>
-              </ul>
-            </div> */}
+
             <div className="tech-card">
               <ul>
                 <u>
                   <h4>Database</h4>
                 </u>
-                <li>Sequelize</li>
                 <li>PostgreSQL</li>
-                <li>Firebase</li>
+                <li>MySQL</li>
+                <li>MongoDB</li>
+                <li>Configuration Management Database (CMDB/ServiceNow)</li>
+              </ul>
+            </div>
+            <div className="tech-card">
+              <ul>
+                <u>
+                  <h4>Tools</h4>
+                </u>
+                <li>GitHub</li>
+                <li>Postman</li>
+                <li>ServiceNow</li>
+                <li>Microsoft Azure</li>
               </ul>
             </div>
           </div>
