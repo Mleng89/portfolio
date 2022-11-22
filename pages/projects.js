@@ -55,7 +55,7 @@ export default function projects() {
               </div>
               <div className="card">
                 <h3>The Cellar</h3>
-                <p>E-commerce website for the purcahse of wine!</p>
+                <p>E-commerce website for the purchase of wine!</p>
 
                 <h4>
                   <br />
@@ -67,7 +67,7 @@ export default function projects() {
                   <br />
                 </h4>
                 <a
-                  href="https://thecellar.herokuapp.com/"
+                  href="https://github.com/Team-Kappa/TheCellar"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -131,15 +131,19 @@ export default function projects() {
                 <br />
               </h4>
               <h3>
-                <a href="https://github.com/Mleng89/edubase"
-                target="_blank"
-                  rel="noreferrer">
+                <a
+                  href="https://github.com/Mleng89/edubase"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <a>GitHub</a>
                 </a>
                 <br />
-                <a href="https://mleng89.github.io/edubase/#/"
-                target="_blank"
-                  rel="noreferrer">
+                <a
+                  href="https://mleng89.github.io/edubase/#/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   Deployed
                 </a>
               </h3>
@@ -171,7 +175,11 @@ export default function projects() {
                 <br />
               </h4>
               <h3>
-                <a href="https://github.com/kylejb/JobMate" target="_blank" rel="noreferrer">
+                <a
+                  href="https://github.com/kylejb/JobMate"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   GitHub
                 </a>
               </h3>

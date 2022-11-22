@@ -24,7 +24,7 @@ export default function about() {
               <p>
                 I was a pre-school teacher for almost a decade, although I
                 absolutely loved the profession, I felt I could make a bigger
-                impact. I wanted to combined by love for educaiton, learning,
+                impact. I wanted to combined by love for education, learning,
                 and technology.
               </p>
               <br />
