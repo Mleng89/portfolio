@@ -75,6 +75,7 @@ export default function about() {
                 <li>Express</li>
                 <li>Jest</li>
                 <li>ReactJS</li>
+                <li>Vue.js</li>
                 <li>Gatsby</li>
                 <li>NextJS</li>
                 <li>Redux</li>
