@@ -39,12 +39,13 @@ export default function about() {
               <br />
               <p>
                 When I am not learning, you can find me playing video games,
-                reading, or training. (I am an Olympic weightlifting athlete!)
+                reading, bouldering, or training. (I am an Olympic weightlifting
+                athlete!)
               </p>
               <br />
               <p>
-                Currently, I am learning C#, I wanted to learn a more strongly
-                typed language!
+                Currently, I am an associate software developer at Columbia
+                University!
               </p>
             </div>
           </div>
