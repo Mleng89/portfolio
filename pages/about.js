@@ -61,6 +61,7 @@ export default function about() {
                 <li>Python</li>
                 <li>C#</li>
                 <li>SQL</li>
+                <li>PHP</li>
               </ul>
             </div>
             <div className="tech-card">
@@ -78,6 +79,7 @@ export default function about() {
                 <li>Redux</li>
                 <li>React Native</li>
                 <li>.NET</li>
+                <li>Symfony</li>
               </ul>
             </div>
 
