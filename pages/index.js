@@ -35,7 +35,7 @@ export default function Home() {
               </div>
             </div>
             <div className="resume_button_media">
-              <Link href="https://drive.google.com/file/d/11yL8IXBnBaDa9mg_IhrR_0kA6FWlMcaB/view?usp=sharing">
+              <Link href="https://drive.google.com/file/d/1q38ahbdBZDVo3C9icw82BnTwmC2GAy7d/view?usp=sharing">
                 <a className="resume_button" target="_blank" rel="noreferrer">
                   View my Resume{' '}
                 </a>
