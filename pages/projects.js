@@ -44,7 +44,7 @@ export default function projects() {
                 <h4>
                   <hr />
 
-                  <Link href="https://youtu.be/cvxI8c0_3U4">
+                  <Link href="https://youtu.be/cvxI8c0_3U4" legacyBehavior>
                     <a>Click here for the presentation & demo!</a>
                   </Link>
                 </h4>
