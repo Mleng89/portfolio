@@ -24,8 +24,8 @@ export default function about() {
               <p>
                 I was a pre-school teacher for almost a decade, although I
                 absolutely loved the profession, I felt I could make a bigger
-                impact. I wanted to combined by love for education, learning,
-                and technology.
+                impact. I wanted to combine my love for education, learning, and
+                technology.
               </p>
               <br />
               <p>
@@ -43,10 +43,51 @@ export default function about() {
                 athlete!)
               </p>
               <br />
-              <p>
-                Currently, I am an associate software developer at Columbia
-                University!
-              </p>
+            </div>
+          </div>
+          <hr className="line_break" />
+          <h3>Experience</h3>
+          <div className="timeline">
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <h3>Founding Frontend Developer</h3>
+                <p>Stealth - Start up</p>
+                <p>2024 - 2024</p>
+                <p>
+                  Designed and implemented a scalable front-end architecture and
+                  reusable components, developed an AI feedback prototype
+                  improving model accuracy, optimized development efficiency
+                  through enhanced version control, and guided teammates while
+                  refining UX/UI requirements in collaboration with leadership
+                </p>
+              </div>
+            </div>
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <h3>Associate Software Developer</h3>
+                <p>Columbia University</p>
+                <p>2023 - 2024</p>
+                <p>
+                  Led development projects, upgraded the Symfony framework for
+                  improved performance and reduced technical debt, and mentored
+                  an intern to enhance team productivity and ensure timely
+                  project delivery.
+                </p>
+              </div>
+            </div>
+            <div className="timeline-item">
+              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <h3>Pre-School Teacher</h3>
+                <p>Brooklyn, New York</p>
+                <p>2012 - 2020</p>
+                <p>
+                  Provided education and care for young children, fostering
+                  their growth and development.
+                </p>
+              </div>
             </div>
           </div>
           <hr className="line_break" />
@@ -55,7 +96,7 @@ export default function about() {
             <div className="tech-card">
               <ul>
                 <u>
-                  <h4>Languages</h4>
+                  <p>Languages</p>
                 </u>
                 <li>JavaScript</li>
                 <li>TypeScript</li>
@@ -68,7 +109,7 @@ export default function about() {
             <div className="tech-card">
               <ul>
                 <u>
-                  <h4>Libraries & Frameworks</h4>
+                  <p>Libraries & Frameworks</p>
                 </u>
                 <li>Django</li>
                 <li>Node.js</li>
@@ -88,7 +129,7 @@ export default function about() {
             <div className="tech-card">
               <ul>
                 <u>
-                  <h4>Database</h4>
+                  <p>Database</p>
                 </u>
                 <li>PostgreSQL</li>
                 <li>MySQL</li>
@@ -99,10 +140,11 @@ export default function about() {
             <div className="tech-card">
               <ul>
                 <u>
-                  <h4>Tools</h4>
+                  <p>Tools</p>
                 </u>
                 <li>GitHub</li>
                 <li>Postman</li>
+                <li>Jira</li>
                 <li>ServiceNow</li>
                 <li>Microsoft Azure</li>
               </ul>
@@ -199,7 +241,10 @@ export default function about() {
 
         .tech-card:hover,
         .tech-card:focus,
-        .tech-card:active {
+        .tech-card:active,
+        .timeline-content:hover,
+        .timeline-content:focus,
+        .timeline-content:active {
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
             0 2px 10px 0 rgba(0, 0, 0, 0.12);
         }
@@ -214,10 +259,57 @@ export default function about() {
         .logo {
           height: 1em;
         }
+        .timeline {
+          position: relative;
+          margin: 20px 0;
+          padding-left: 40px;
+          border-left: 2px solid #ddd;
+        }
+
+        .timeline-item {
+          position: relative;
+          margin-bottom: 20px;
+        }
+
+        .timeline-dot {
+          position: absolute;
+          left: -12px;
+          top: 5px;
+          width: 20px;
+          height: 20px;
+          background-color: #ff6f61;
+          border-radius: 50%;
+          border: 2px solid #fff;
+        }
+
+        .timeline-content {
+          margin-left: 20px;
+          background: #f9f9f9;
+          padding: 10px 15px;
+          border-radius: 5px;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-content h3 {
+          margin-top: 0;
+          font-size: 1.2em;
+        }
+
         @media (max-width: 600px) {
           .grid {
             width: 100%;
             flex-direction: column;
+          }
+          .tech-container {
+            display: flex;
+            flex-direction: column;
+          }
+          .tech-card {
+            height: 40vh;
+            width: 40vw;
+          }
+          .me_image {
+            margin-top: 5vh;
           }
         }
       `}</style>
@@ -232,23 +324,6 @@ export default function about() {
         * {
           box-sizing: border-box;
           color: #121629;
-        }
-        @media only screen and (max-width: 1000px) {
-          .container {
-            display: flex;
-            flex-direction: column;
-          }
-          .tech-container {
-            display: flex;
-            flex-direction: column;
-          }
-          .tech-card {
-            height: 40vh;
-            width: 40vw;
-          }
-          .me_image {
-            margin-top: 5vh;
-          }
         }
       `}</style>
     </div>

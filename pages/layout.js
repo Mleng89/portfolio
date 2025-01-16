@@ -17,24 +17,24 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
         <nav>
           <ul>
             <li>
-              <Link href="/">
+              <Link href="/" legacyBehavior>
                 <a>Home</a>
               </Link>
             </li>
 
             <li>
-              <Link href="/projects">
+              <Link href="/projects" legacyBehavior>
                 <a>Projects</a>
               </Link>
             </li>
 
             <li>
-              <Link href="/about">
+              <Link href="/about" legacyBehavior>
                 <a>About</a>
               </Link>
             </li>
             <li>
-              <Link href="https://mleng89.medium.com/">
+              <Link href="https://mleng89.medium.com/" legacyBehavior>
                 <a target="_blank">Blog</a>
               </Link>
             </li>
@@ -47,28 +47,31 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
       <footer>
         <div className="footer_text">
           <div>
-            <Link href="https://github.com/Mleng89">
+            <Link href="https://github.com/Mleng89" legacyBehavior>
               <a className="github">
                 <img src="/github.svg" width="20px" height="20px" />
               </a>
             </Link>
           </div>
           <div>
-            <Link href="https://mleng89.medium.com/">
+            <Link href="https://mleng89.medium.com/" legacyBehavior>
               <a className="medium">
                 <img src="/medium.svg" width="20px" height="20px" />
               </a>
             </Link>
           </div>
           <div>
-            <Link href="https://www.linkedin.com/in/matthew-leng/">
+            <Link
+              href="https://www.linkedin.com/in/matthew-leng/"
+              legacyBehavior
+            >
               <a>
                 <img src="/linkedin.svg" width="20px" height="20px" />
               </a>
             </Link>
           </div>
           <div>
-            <Link href="https://twitter.com/matthewleng">
+            <Link href="https://twitter.com/matthewleng" legacyBehavior>
               <a>
                 <img src="/twitter.svg" width="20px" height="20px" />
               </a>

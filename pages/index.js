@@ -35,7 +35,10 @@ export default function Home() {
               </div>
             </div>
             <div className="resume_button_media">
-              <Link href="https://drive.google.com/file/d/1q38ahbdBZDVo3C9icw82BnTwmC2GAy7d/view?usp=sharing">
+              <Link
+                href="https://drive.google.com/file/d/1bHpLAa831vWyA32uQ7gaMj0ziPLYalBX/view?usp=drive_link"
+                legacyBehavior
+              >
                 <a className="resume_button" target="_blank" rel="noreferrer">
                   View my Resume{' '}
                 </a>
