@@ -90,6 +90,7 @@ export default function About() {
           <hr className="line_break" />
 
           <h3>Tech Stack</h3>
+
           <div className="tech-container">
             {/* Languages */}
             <div className="tech-card">
@@ -280,7 +281,7 @@ export default function About() {
                 <li>
                   <img
                     src="https://upload.wikimedia.org/wikipedia/commons/5/57/ServiceNow_logo.svg"
-                    alt="ServiceNow"
+                    alt="ServiceNow CMDB"
                     className="tech-icon"
                   />
                   ServiceNow CMDB
@@ -442,26 +443,50 @@ export default function About() {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          margin-top: 1rem;
-          gap: 1rem;
+          gap: 2rem;
+          padding: 2rem 0;
+        }
+
+        .tech-card {
+          background: #fff;
+          border: 1px solid #eaeaea;
+          border-radius: 10px;
+          padding: 1.5rem;
+          width: 280px;
+          min-height: 350px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+          transition: box-shadow 0.3s ease;
+        }
+
+        .tech-card:hover {
+          box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+        }
+
+        .tech-card h4 {
+          margin-bottom: 1rem;
+          font-size: 1.25rem;
+          border-bottom: 1px solid #eee;
+          padding-bottom: 0.5rem;
         }
 
         .tech-card ul {
-          list-style-type: none;
+          list-style: none;
           padding: 0;
+          margin: 0;
         }
 
         .tech-card li {
           display: flex;
           align-items: center;
           gap: 0.75rem;
-          margin-bottom: 0.5rem;
+          margin-bottom: 0.75rem;
+          line-height: 1.6;
           font-size: 1rem;
         }
 
         .tech-icon {
-          height: 20px;
-          width: 20px;
+          height: 22px;
+          width: 22px;
           object-fit: contain;
           transition: transform 0.2s;
         }
@@ -478,6 +503,8 @@ export default function About() {
           .tech-container {
             flex-direction: column;
             align-items: center;
+            gap: 1.5rem;
+            padding: 1rem;
           }
 
           .me_image {
@@ -488,6 +515,7 @@ export default function About() {
 
           .tech-card {
             width: 90%;
+            min-height: auto;
           }
         }
       `}</style>
