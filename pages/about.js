@@ -1,157 +1,343 @@
 import Head from 'next/head';
 import Layout from './layout';
-export default function about() {
+
+export default function About() {
   return (
     <div>
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main>
         <Layout title="About | Matthew Leng">
           <link
             href="https://fonts.googleapis.com/css2?family=Chivo&family=Overpass&display=swap"
             rel="stylesheet"
           />
+
           <div className="container">
-            <img className="me_image" src="/media_me1.png" />
+            <img className="me_image" src="/media_me1.png" alt="Matthew Leng" />
+
             <div className="about_context card">
               <h2>Hello!</h2>
               <p>
-                My name is Matthew Leng, I was born and raised in Brooklyn, New
-                York.
+                My name is Matthew Leng, born and raised in Brooklyn, New York.
               </p>
-              <br />
               <p>
-                I was a pre-school teacher for almost a decade, although I
+                I was a pre-school teacher for almost a decade. Although I
                 absolutely loved the profession, I felt I could make a bigger
-                impact. I wanted to combine my love for education, learning, and
+                impact by combining my love for education, learning, and
                 technology.
               </p>
-              <br />
               <p>
-                This is when I rediscovered my passion for software engineering.
-                I took various courses on Udemy and Codecademy, but wanted a
-                more structured learning environment, which led me to attend
-                Fullstack Academy. Since finishing the bootcamp, I am still
-                learning and building applications that can solve problems
-                people have in their daily lives to make a bigger impact!
+                That’s when I rediscovered my passion for software engineering.
+                After taking various online courses, I joined Fullstack Academy
+                to pursue structured learning. Since then, I've been building
+                applications to solve real-world problems and make a positive
+                impact.
               </p>
-              <br />
               <p>
-                When I am not learning, you can find me playing video games,
-                reading, bouldering, or training. (I am an Olympic weightlifting
-                athlete!)
+                When I’m not learning or coding, you can find me playing video
+                games, reading, bouldering, or training — I’m an Olympic
+                weightlifting athlete!
               </p>
-              <br />
             </div>
           </div>
+
           <hr className="line_break" />
+
           <h3>Experience</h3>
           <div className="timeline">
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
                 <h3>Founding Frontend Developer</h3>
-                <p>Stealth - Start up</p>
-                <p>2024 - 2024</p>
+                <p>Stealth Startup • 2024</p>
                 <p>
-                  Designed and implemented a scalable front-end architecture and
-                  reusable components, developed an AI feedback prototype
-                  improving model accuracy, optimized development efficiency
-                  through enhanced version control, and guided teammates while
-                  refining UX/UI requirements in collaboration with leadership
+                  Designed and implemented scalable front-end architecture,
+                  developed an AI feedback prototype improving model accuracy,
+                  and collaborated with leadership to refine UX/UI.
                 </p>
               </div>
             </div>
+
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
                 <h3>Associate Software Developer</h3>
-                <p>Columbia University</p>
-                <p>2023 - 2024</p>
+                <p>Columbia University • 2023 – 2024</p>
                 <p>
-                  Led development projects, upgraded the Symfony framework for
-                  improved performance and reduced technical debt, and mentored
-                  an intern to enhance team productivity and ensure timely
-                  project delivery.
+                  Led development projects, upgraded legacy frameworks, and
+                  mentored an intern to enhance productivity and ensure timely
+                  delivery.
                 </p>
               </div>
             </div>
+
             <div className="timeline-item">
               <div className="timeline-dot"></div>
               <div className="timeline-content">
                 <h3>Pre-School Teacher</h3>
-                <p>Brooklyn, New York</p>
-                <p>2012 - 2020</p>
+                <p>Brooklyn, New York • 2012 – 2020</p>
                 <p>
-                  Provided education and care for young children, fostering
-                  their growth and development.
+                  Provided early childhood education and fostered a nurturing
+                  environment to support children’s growth and development.
                 </p>
               </div>
             </div>
           </div>
+
           <hr className="line_break" />
-          <h3>Tech stack:</h3>
+
+          <h3>Tech Stack</h3>
           <div className="tech-container">
+            {/* Languages */}
             <div className="tech-card">
+              <h4>Languages</h4>
               <ul>
-                <u>
-                  <p>Languages</p>
-                </u>
-                <li>JavaScript</li>
-                <li>TypeScript</li>
-                <li>Python</li>
-                <li>C#</li>
-                <li>SQL</li>
-                <li>PHP</li>
-              </ul>
-            </div>
-            <div className="tech-card">
-              <ul>
-                <u>
-                  <p>Libraries & Frameworks</p>
-                </u>
-                <li>Django</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>Jest</li>
-                <li>ReactJS</li>
-                <li>Vue.js</li>
-                <li>Gatsby</li>
-                <li>NextJS</li>
-                <li>Redux</li>
-                <li>React Native</li>
-                <li>.NET</li>
-                <li>Symfony</li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg"
+                    alt="JavaScript"
+                    className="tech-icon"
+                  />
+                  JavaScript
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/typescript.svg"
+                    alt="TypeScript"
+                    className="tech-icon"
+                  />
+                  TypeScript
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg"
+                    alt="Python"
+                    className="tech-icon"
+                  />
+                  Python
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/csharp.svg"
+                    alt="C#"
+                    className="tech-icon"
+                  />
+                  C#
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mysql.svg"
+                    alt="SQL"
+                    className="tech-icon"
+                  />
+                  SQL
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/php.svg"
+                    alt="PHP"
+                    className="tech-icon"
+                  />
+                  PHP
+                </li>
               </ul>
             </div>
 
+            {/* Libraries & Frameworks */}
             <div className="tech-card">
+              <h4>Libraries & Frameworks</h4>
               <ul>
-                <u>
-                  <p>Database</p>
-                </u>
-                <li>PostgreSQL</li>
-                <li>MySQL</li>
-                <li>MongoDB</li>
-                <li>Configuration Management Database (CMDB/ServiceNow)</li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/django.svg"
+                    alt="Django"
+                    className="tech-icon"
+                  />
+                  Django
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nodedotjs.svg"
+                    alt="Node.js"
+                    className="tech-icon"
+                  />
+                  Node.js
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/express.svg"
+                    alt="Express"
+                    className="tech-icon"
+                  />
+                  Express
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/jest.svg"
+                    alt="Jest"
+                    className="tech-icon"
+                  />
+                  Jest
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg"
+                    alt="React"
+                    className="tech-icon"
+                  />
+                  React
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vuedotjs.svg"
+                    alt="Vue.js"
+                    className="tech-icon"
+                  />
+                  Vue.js
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/gatsby.svg"
+                    alt="Gatsby"
+                    className="tech-icon"
+                  />
+                  Gatsby
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nextdotjs.svg"
+                    alt="Next.js"
+                    className="tech-icon"
+                  />
+                  Next.js
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/redux.svg"
+                    alt="Redux"
+                    className="tech-icon"
+                  />
+                  Redux
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg"
+                    alt="React Native"
+                    className="tech-icon"
+                  />
+                  React Native
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/dotnet.svg"
+                    alt=".NET"
+                    className="tech-icon"
+                  />
+                  .NET
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/symfony.svg"
+                    alt="Symfony"
+                    className="tech-icon"
+                  />
+                  Symfony
+                </li>
               </ul>
             </div>
+
+            {/* Databases */}
             <div className="tech-card">
+              <h4>Databases</h4>
               <ul>
-                <u>
-                  <p>Tools</p>
-                </u>
-                <li>GitHub</li>
-                <li>Postman</li>
-                <li>Jira</li>
-                <li>ServiceNow</li>
-                <li>Microsoft Azure</li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/postgresql.svg"
+                    alt="PostgreSQL"
+                    className="tech-icon"
+                  />
+                  PostgreSQL
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mysql.svg"
+                    alt="MySQL"
+                    className="tech-icon"
+                  />
+                  MySQL
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mongodb.svg"
+                    alt="MongoDB"
+                    className="tech-icon"
+                  />
+                  MongoDB
+                </li>
+                <li>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/57/ServiceNow_logo.svg"
+                    alt="ServiceNow"
+                    className="tech-icon"
+                  />
+                  ServiceNow CMDB
+                </li>
+              </ul>
+            </div>
+
+            {/* Tools */}
+            <div className="tech-card">
+              <h4>Tools</h4>
+              <ul>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg"
+                    alt="GitHub"
+                    className="tech-icon"
+                  />
+                  GitHub
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/postman.svg"
+                    alt="Postman"
+                    className="tech-icon"
+                  />
+                  Postman
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/jirasoftware.svg"
+                    alt="Jira"
+                    className="tech-icon"
+                  />
+                  Jira
+                </li>
+                <li>
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/57/ServiceNow_logo.svg"
+                    alt="ServiceNow"
+                    className="tech-icon"
+                  />
+                  ServiceNow
+                </li>
+                <li>
+                  <img
+                    src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/microsoftazure.svg"
+                    alt="Azure"
+                    className="tech-icon"
+                  />
+                  Microsoft Azure
+                </li>
               </ul>
             </div>
           </div>
         </Layout>
       </main>
+
       <style jsx>{`
         .container {
           min-height: 80vh;
@@ -161,24 +347,13 @@ export default function about() {
           justify-content: center;
           align-items: center;
         }
-        hr {
-          border: 0;
-          height: 1px;
-          width: 10%;
-          position: relative;
-          margin: 30px auto;
-        }
-        .line_break {
-          background: #232946;
-        }
 
-        .tech-container {
-          min-height: 25vh;
-          min-width: 15vw;
-          padding: 0 0.5rem;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+        .line_break {
+          height: 1px;
+          background: #232946;
+          margin: 30px auto;
+          width: 10%;
+          border: none;
         }
 
         main {
@@ -189,19 +364,23 @@ export default function about() {
           align-items: center;
           font-family: 'Chivo', sans-serif;
         }
+
         h2 {
           font-size: 2em;
           font-family: 'Chivo';
           text-align: center;
         }
+
         h3 {
-          font-size: 3rem;
+          font-size: 2rem;
           text-align: center;
-          margin-top: 0;
-          margin-bottom: 1%;
+          margin-top: 2rem;
+          margin-bottom: 1rem;
         }
+
         h4 {
           font-size: 1.5rem;
+          margin-bottom: 0.5rem;
         }
 
         .me_image {
@@ -211,54 +390,19 @@ export default function about() {
           width: auto;
           border-radius: 50%;
         }
+
         .about_context {
           margin: 2%;
           padding: 2%;
         }
 
-        .card {
-          margin: 1rem;
-          flex-basis: 100%;
-          padding: 1.5rem;
-          text-align: left;
-        }
-        .tech-card {
-          overflow: auto;
-          height: 40vh;
-          display: inline-block;
-          flex-basis: 15rem;
-          margin: 1rem;
-          text-align: left;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-        }
-        .tech-card p {
-          text-align: left;
-        }
-        .tech-card ul {
-          list-style-type: none;
-        }
-
-        .tech-card:hover,
-        .tech-card:focus,
-        .tech-card:active,
-        .timeline-content:hover,
-        .timeline-content:focus,
-        .timeline-content:active {
-          box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16),
-            0 2px 10px 0 rgba(0, 0, 0, 0.12);
-        }
-
         .card p {
-          margin: 0;
-          font-size: 1.5rem;
-          line-height: 1.5;
-          font-family: 'Overpass';
+          margin-bottom: 1rem;
+          font-size: 1.2rem;
+          line-height: 1.6;
+          font-family: 'Overpass', sans-serif;
         }
 
-        .logo {
-          height: 1em;
-        }
         .timeline {
           position: relative;
           margin: 20px 0;
@@ -277,7 +421,7 @@ export default function about() {
           top: 5px;
           width: 20px;
           height: 20px;
-          background-color: #ff6f61;
+          background-color: #0070f3;
           border-radius: 50%;
           border: 2px solid #fff;
         }
@@ -287,29 +431,63 @@ export default function about() {
           background: #f9f9f9;
           padding: 10px 15px;
           border-radius: 5px;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
         .timeline-content h3 {
-          margin-top: 0;
-          font-size: 1.2em;
+          margin: 0 0 0.5rem 0;
+          font-size: 1.2rem;
         }
 
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
+        .tech-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          margin-top: 1rem;
+          gap: 1rem;
+        }
+
+        .tech-card ul {
+          list-style-type: none;
+          padding: 0;
+        }
+
+        .tech-card li {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          margin-bottom: 0.5rem;
+          font-size: 1rem;
+        }
+
+        .tech-icon {
+          height: 20px;
+          width: 20px;
+          object-fit: contain;
+          transition: transform 0.2s;
+        }
+
+        .tech-icon:hover {
+          transform: scale(1.2);
+        }
+
+        @media (max-width: 768px) {
+          .container {
             flex-direction: column;
           }
+
           .tech-container {
-            display: flex;
             flex-direction: column;
+            align-items: center;
           }
-          .tech-card {
-            height: 40vh;
-            width: 40vw;
-          }
+
           .me_image {
+            height: auto;
+            width: 75%;
             margin-top: 5vh;
+          }
+
+          .tech-card {
+            width: 90%;
           }
         }
       `}</style>
@@ -321,6 +499,7 @@ export default function about() {
           margin: 0;
           background: white;
         }
+
         * {
           box-sizing: border-box;
           color: #121629;

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Layout from './layout';
-import Typical from 'react-typical';
+import { Typewriter } from 'react-simple-typewriter';
 
 export default function Home() {
   return (
@@ -23,20 +23,23 @@ export default function Home() {
                 Hello! My name is{' '}
                 <span className="title_name">Matthew Leng</span>
               </h2>
-              <div className="typical_media">
-                <Typical
-                  steps={[
-                    'I am a former pre-school teacher turned software engineer!',
-                    100
-                  ]}
-                  loop="2"
-                  wrapper="h6"
-                />
-              </div>
             </div>
+            <div className="typewriter_media">
+              <Typewriter
+                words={[
+                  'I am a former pre-school teacher turned software engineer and technical writer!'
+                ]}
+                loop={0}
+                cursor
+                typeSpeed={70}
+                deleteSpeed={50}
+                delaySpeed={2000}
+              />
+            </div>
+
             <div className="resume_button_media">
               <Link
-                href="https://drive.google.com/file/d/1bHpLAa831vWyA32uQ7gaMj0ziPLYalBX/view?usp=drive_link"
+                href="https://drive.google.com/file/d/17DM-E0WpirqB3HLcNbCFZE6j6j6t5SPn/view?usp=sharing"
                 legacyBehavior
               >
                 <a className="resume_button" target="_blank" rel="noreferrer">
@@ -79,22 +82,25 @@ export default function Home() {
         }
 
         a.resume_button {
-           display: inline-block;
-           padding: 1em 2em;
-           margin: 0 0.3em 1.5em 0;
-           border-radius: 1em;
-           box-sizing: border-box;
-           text-decoration: none;
-           font-family: 'Chivo', sans-serif;
-           font-weight: 300;
-           color: #ffffff;
-           background-color: #af3d4e;
-           text-align: center;
-           transition: all 0.2s;
+          display: inline-block;
+          padding: 0.75em 1.5em;
+          margin-top: 1.5em;
+          border-radius: 0.5em;
+          text-decoration: none;
+          font-family: 'Chivo', sans-serif;
+          font-weight: 500;
+          color: white;
+          background-color: #0070f3;
+          text-align: center;
+          transition: background 0.3s, transform 0.2s;
+          box-shadow: 0 4px 14px rgba(0, 118, 255, 0.39);
         }
+
         a.resume_button:hover {
-          filter: saturate(1.5) drop-shadow(5px 5px rgba(0, 0, 0, 0.16));
+          background-color: #0059c1;
+          transform: translateY(-2px);
         }
+
         .me_image {
           margin-top: 1rem;
           height: 50vh;
@@ -144,8 +150,8 @@ export default function Home() {
             display: flex;
             flex-direction: column;
           }
-          .typical_media{
-            margin: 0;
+          .typewriter_media{
+            margin: 0
           }
           .resume_button_media{
              margin-bottom: 2em;
@@ -159,55 +165,3 @@ export default function Home() {
     </div>
   );
 }
-
-/*
-background: linear-gradient(
-            -55deg,
-            #9fa5d5,
-            #b8c1ec,
-            #eebbc3,
-            #eebbc3
-          );
-          background-size: 400% 400%;
-          animation: gradient 15s ease infinite;
-        }
-
-        @keyframes gradient {
-          0% {
-            background-position: 0% 50%;
-          }
-          50% {
-            background-position: 100% 50%;
-          }
-          100% {
-            background-position: 0% 50%;
-          }
-
-                  .bouncy {
-           animation: bouncy 10s infinite linear;
-           position: relative;
-        }
-        @keyframes bouncy {
-           0% {
-            top: 0em;
-          }
-           40% {
-            top: 0em;
-          }
-           43% {
-            top: -0.9em;
-          }
-           46% {
-            top: 0em;
-          }
-           48% {
-            top: -0.4em;
-          }
-           50% {
-            top: 0em;
-          }
-           100% {
-            top: 0em;
-          }
-        }
-*/
