@@ -39,7 +39,7 @@ export default function Home() {
 
             <div className="resume_button_media">
               <Link
-                href="https://drive.google.com/file/d/17DM-E0WpirqB3HLcNbCFZE6j6j6t5SPn/view?usp=sharing"
+                href="https://drive.google.com/file/d/1Z5IVC4-HQMMpPIOqpMQsbOnvTdVxKNGY/view?usp=sharing"
                 legacyBehavior
               >
                 <a className="resume_button" target="_blank" rel="noreferrer">
