@@ -17,7 +17,7 @@ export default function Home() {
             rel="stylesheet"
           />
           <div className="container">
-            <img src="/me.png" className="me_image" />
+            <img src="/me.png" className="me_image" alt="Matthew Leng" />
             <div className="title">
               <h2>
                 Hello! My name is{' '}
@@ -54,8 +54,8 @@ export default function Home() {
       <style jsx>{`
         .container {
           min-height: 90vh;
-          min-width: 95vw;
-          padding: 0 0.5rem;
+          width: 100%;
+          padding: 0 1rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -70,13 +70,18 @@ export default function Home() {
           align-items: center;
           font-family: 'Chivo', sans-serif;
         }
+
         h2 {
           font-family: 'Overpass', sans-serif;
+          text-align: center;
         }
+
         .title {
-          margin-left: 2%;
+          margin-top: 1.5rem;
           font-size: 2em;
+          text-align: center;
         }
+
         .title_name {
           color: #af3d4e;
         }
@@ -107,30 +112,44 @@ export default function Home() {
           width: auto;
           border-radius: 50%;
         }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+
+        .typewriter_media {
+          margin-top: 1rem;
+          font-size: 1.25rem;
+          text-align: center;
+          padding: 0 1rem;
         }
 
-        footer img {
-          margin-left: 0.5rem;
+        .resume_button_media {
+          margin-bottom: 2em;
         }
 
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+        @media only screen and (max-width: 768px) {
+          .container {
+            padding: 1rem;
+          }
 
-         {
-          /* a {
-          color: inherit;
-          text-decoration: none;
-        } */
+          .me_image {
+            height: auto;
+            width: 75%;
+            margin-top: 5vh;
+          }
+
+          .title {
+            font-size: 1.5em;
+            text-align: center;
+          }
+
+          .typewriter_media {
+            font-size: 1rem;
+            padding: 0 1rem;
+            text-align: center;
+          }
+
+          a.resume_button {
+            font-size: 1rem;
+            padding: 0.65em 1.25em;
+          }
         }
       `}</style>
 
@@ -139,28 +158,13 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          background: white
+          background: white;
         }
+
         * {
           box-sizing: border-box;
           color: #121629;
         }
-       @media only screen and (max-width: 768px){
-         .container {
-            display: flex;
-            flex-direction: column;
-          }
-          .typewriter_media{
-            margin: 0
-          }
-          .resume_button_media{
-             margin-bottom: 2em;
-          }
-          .me_image {
-            margin-top: 5vh;
-          }
-
- }
       `}</style>
     </div>
   );
