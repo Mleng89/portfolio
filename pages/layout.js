@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 export default function Layout({ children, title = 'Matthew Leng' }) {
   return (
-    <div className="container">
+    <div className="layout-container">
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
@@ -84,19 +84,16 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
           </div>
         </div>
 
-        <p className="footer_name">© 2021 Matthew Leng</p>
+        <p className="footer_name"> 2021 Matthew Leng</p>
       </footer>
       <style jsx>
         {`
           nav {
-            padding-top: 5px;
-            padding-right: 20px;
-            box-shadow: 1px 1px #121629;
-            overflow: hidden;
-            min-height: 55px;
-            width: 99.1vw;
             background-color: #303f9f;
-            font-type: 'Overpass';
+            box-shadow: 1px 1px #121629;
+            width: 100vw;
+            min-height: 55px;
+            font-family: 'Overpass', sans-serif;
           }
           nav a {
             font-size: 1.5em;
@@ -111,8 +108,7 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
             justify-content: center;
             list-style-type: none;
             margin: 0;
-            margin-top: 10px;
-            padding: 0;
+            padding: 10px 0; /* Vertical padding for links */
           }
           nav ul li {
             margin-left: 50px;
@@ -121,6 +117,7 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
             padding-top: 25px;
             background-color: #303f9f;
             min-height: 100px;
+            width: 100vw;
           }
           .footer_text {
             display: flex;
@@ -158,7 +155,18 @@ export default function Layout({ children, title = 'Matthew Leng' }) {
       <style jsx global>
         {`
           body {
+            margin: 0;
+            padding: 0;
             overflow-x: hidden;
+          }
+          .main-container {
+            width: 100vw;
+          }
+          nav {
+            width: 100vw;
+          }
+          footer {
+            width: 100%;
           }
         `}
       </style>

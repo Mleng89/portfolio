@@ -39,7 +39,7 @@ export default function Home() {
 
             <div className="resume_button_media">
               <Link
-                href="https://drive.google.com/file/d/1Z5IVC4-HQMMpPIOqpMQsbOnvTdVxKNGY/view?usp=sharing"
+                href="https://drive.google.com/file/d/1q4GQdxdO1v0K5Q9N07QoOdoVwChg-kpH/view?usp=sharing"
                 legacyBehavior
               >
                 <a className="resume_button" target="_blank" rel="noreferrer">
@@ -55,7 +55,6 @@ export default function Home() {
         .container {
           min-height: 90vh;
           width: 100%;
-          padding: 0 1rem;
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -150,20 +149,6 @@ export default function Home() {
             font-size: 1rem;
             padding: 0.65em 1.25em;
           }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          background: white;
-        }
-
-        * {
-          box-sizing: border-box;
-          color: #121629;
         }
       `}</style>
     </div>
