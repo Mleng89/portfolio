@@ -59,7 +59,7 @@ export default function Projects() {
                     View Project
                   </a>
                 </Link>
-
+                <br />
                 <Link
                   href="https://github.com/Mleng89/lil-pause"
                   legacyBehavior
@@ -71,6 +71,26 @@ export default function Projects() {
               </div>
 
               <div className="card">
+                <h3>Into the Abyss</h3>
+                <p>A dungeon crawling card game.</p>
+                <p>
+                  <u>Built on</u>: HTML and JavaScript (Phaser.js)
+                </p>
+                <img
+                  src="/IntoTheAbyss.png"
+                  className="image_pointer"
+                  alt="Into the Abyss screenshot"
+                />
+                <a
+                  href="https://mleng89.github.io/Stackathon/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  View Project
+                </a>
+              </div>
+
+              <div className="card">
                 <h3>Notables</h3>
                 <p>
                   A WYSIWYG where users can take notes in plain text AND create
@@ -79,43 +99,28 @@ export default function Projects() {
                 <p>
                   <u>Built on</u>: HTML, CSS, JS, React, Redux, Express, Docker
                 </p>
-                <a
-                  href="https://github.com/2011-libra/notables"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    className="image_pointer"
-                    src="/notables.png"
-                    alt="Notables project screenshot"
-                  />
-                </a>
+                <img
+                  className="image_pointer"
+                  src="/notables.png"
+                  alt="Notables project screenshot"
+                />
+
                 <br />
                 <Link href="https://youtu.be/cvxI8c0_3U4" legacyBehavior>
                   <a target="_blank" rel="noreferrer">
                     Click here for the presentation & demo!
                   </a>
                 </Link>
-              </div>
-
-              <div className="card">
-                <h3>Into the Abyss</h3>
-                <p>A dungeon crawling card game.</p>
-                <p>
-                  <u>Built on</u>: HTML and JavaScript (Phaser.js)
-                </p>
+                <br />
                 <a
-                  href="https://mleng89.github.io/Stackathon/"
+                  href="https://github.com/2011-libra/notables"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img
-                    src="/IntoTheAbyss.png"
-                    className="image_pointer"
-                    alt="Into the Abyss screenshot"
-                  />
+                  GitHub
                 </a>
               </div>
+
               <div className="project_container">
                 <div className="card">
                   <h3>EduBase: Work in Progress</h3>
@@ -130,20 +135,21 @@ export default function Projects() {
                   <p>
                     <u>Built on</u>: React & Firebase
                   </p>
+
+                  <a
+                    href="https://mleng89.github.io/edubase/#/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Project
+                  </a>
+                  <br />
                   <a
                     href="https://github.com/Mleng89/edubase"
                     target="_blank"
                     rel="noreferrer"
                   >
                     GitHub
-                  </a>
-                  <br />
-                  <a
-                    href="https://mleng89.github.io/edubase/#/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Deployed
                   </a>
                 </div>
               </div>
