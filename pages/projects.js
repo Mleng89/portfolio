@@ -42,7 +42,10 @@ export default function Projects() {
 
               <div className="card">
                 <h3>Lil-Pause</h3>
-                <p>A simple tool to encourage users to take short breaks.</p>
+                <p>
+                  A simple tool to encourage users to take short breaks by
+                  creating journal entries.
+                </p>
                 <p>
                   <u>Built on</u>: React, TypeScript, Tailwind
                 </p>
