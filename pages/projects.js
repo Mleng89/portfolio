@@ -59,6 +59,15 @@ export default function Projects() {
                     View Project
                   </a>
                 </Link>
+
+                <Link
+                  href="https://github.com/Mleng89/lil-pause"
+                  legacyBehavior
+                >
+                  <a target="_blank" rel="noreferrer">
+                    GitHub
+                  </a>
+                </Link>
               </div>
 
               <div className="card">
