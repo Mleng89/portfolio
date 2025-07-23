@@ -16,27 +16,44 @@ export default function Projects() {
             rel="stylesheet"
           />
           <div className="container">
-            <h1>Selected Projects:</h1>
+            <h1>Development:</h1>
 
             <div className="project_container">
               <div className="card">
-                <h3>Mental Health Space</h3>
+                <h3>Deep Breaths</h3>
                 <p>
-                  Two projects currently being built for users to use in their
-                  daily lives.
+                  A grounding tool to help users regulate their breathing and
+                  stay present.
                 </p>
                 <p>
-                  <u>Built on</u>: React, TypeScript
+                  <u>Built on</u>: React, TypeScript, Tailwind
                 </p>
+                <img
+                  className="image_pointer"
+                  src="/box-breathing.png"
+                  alt="Deep Breaths project screenshot"
+                />
                 <Link href="https://grounding-nine.vercel.app/" legacyBehavior>
                   <a target="_blank" rel="noreferrer">
-                    Deep Breaths
+                    View Project
                   </a>
                 </Link>
-                <br />
+              </div>
+
+              <div className="card">
+                <h3>Lil-Pause</h3>
+                <p>A simple tool to encourage users to take short breaks.</p>
+                <p>
+                  <u>Built on</u>: React, TypeScript, Tailwind
+                </p>
+                <img
+                  className="image_pointer"
+                  src="/entries.png"
+                  alt="Lil-Pause project screenshot"
+                />
                 <Link href="https://lil-pause.vercel.app/" legacyBehavior>
                   <a target="_blank" rel="noreferrer">
-                    Lil-Pause
+                    View Project
                   </a>
                 </Link>
               </div>
@@ -70,25 +87,6 @@ export default function Projects() {
               </div>
 
               <div className="card">
-                <h3>The Cellar</h3>
-                <p>E-commerce website for the purchase of wine!</p>
-                <p>
-                  <u>Built on</u>: React, Redux, Express, PostgreSQL
-                </p>
-                <a
-                  href="https://github.com/Team-Kappa/TheCellar"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src="/thecellar.png"
-                    className="image_pointer"
-                    alt="The Cellar project screenshot"
-                  />
-                </a>
-              </div>
-
-              <div className="card">
                 <h3>Into the Abyss</h3>
                 <p>A dungeon crawling card game.</p>
                 <p>
@@ -106,61 +104,97 @@ export default function Projects() {
                   />
                 </a>
               </div>
+              <div className="project_container">
+                <div className="card">
+                  <h3>EduBase: Work in Progress</h3>
+                  <p>
+                    A platform for teachers to upload and share lesson plans,
+                    with the ability to leave comments & feedback.
+                  </p>
+                  <p>
+                    <u>Features:</u> A personalized calendar with to-dos to help
+                    organize lessons.
+                  </p>
+                  <p>
+                    <u>Built on</u>: React & Firebase
+                  </p>
+                  <a
+                    href="https://github.com/Mleng89/edubase"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GitHub
+                  </a>
+                  <br />
+                  <a
+                    href="https://mleng89.github.io/edubase/#/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Deployed
+                  </a>
+                </div>
+              </div>
             </div>
 
-            <h2>In the works:</h2>
-
+            <h2>Written Content:</h2>
             <div className="project_container">
               <div className="card">
-                <h3>EduBase</h3>
+                <h3>Chat API Documentation</h3>
                 <p>
-                  A platform for teachers to upload and share lesson plans, with
-                  the ability to leave comments & feedback.
+                  Designed with developers in mind, featuring concise examples
+                  and clear step-by-step workflows for seamless integration.
                 </p>
                 <p>
-                  <u>Features:</u> A personalized calendar with to-dos to help
-                  organize lessons.
-                </p>
-                <p>
-                  <u>Built on</u>: React & Firebase
+                  <u>Written using</u>: Markdown
                 </p>
                 <a
-                  href="https://github.com/Mleng89/edubase"
+                  href="https://gist.github.com/Mleng89/099e95ca15751e9e9dd053c86cd67cde"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  GitHub
-                </a>
-                <br />
-                <a
-                  href="https://mleng89.github.io/edubase/#/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Deployed
+                  View Documentation
                 </a>
               </div>
+              <div className="project_container">
+                <div className="card">
+                  <h3>Development Workflow Guide</h3>
+                  <p>
+                    A detailed reference for developers, covering branching
+                    strategies, code reviews, CI/CD pipelines, deployment
+                    procedures, troubleshooting, and best practices.
+                  </p>
+                  <p>
+                    <u>Written using</u>: Markdown
+                  </p>
+                  <a
+                    href="https://gist.github.com/Mleng89/254ef4967aa4f3013e370a20c57afaab"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    View Documentation
+                  </a>
+                </div>
+              </div>
 
-              <div className="card">
-                <h3>Jobmate</h3>
-                <p>
-                  Helping job seekers filter and track applications, reducing
-                  time and frustration.
-                </p>
-                <p>
-                  <u>Features:</u> Browser plugin reminders to follow up on job
-                  applications.
-                </p>
-                <p>
-                  <u>Built on</u>: React-Typescript, Python, Django
-                </p>
-                <a
-                  href="https://github.com/kylejb/JobMate"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  GitHub
-                </a>
+              <div className="project_container">
+                <div className="card">
+                  <h3>React Project Setup with Docker and Nginx</h3>
+                  <p>
+                    A detailed guide on containerizing a React app with Docker
+                    and serving it using Nginx.
+                  </p>
+                  <p>
+                    <u>Format</u>: Medium article (Step-by-step tutorial)
+                  </p>
+                  <a
+                    href="https://mleng89.medium.com/setting-up-a-react-project-with-docker-and-nginx-5d2917a76e68"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Documentation
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -224,8 +258,6 @@ export default function Projects() {
         }
 
         .project_container:hover .card {
-          filter: blur(1px);
-          opacity: 0.5;
           transform: scale(0.98);
         }
 
@@ -234,10 +266,6 @@ export default function Projects() {
           opacity: 1;
           transform: scale(1.03);
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-        }
-
-        .image_pointer:hover {
-          border: 2px solid #0070f3;
         }
 
         .card h3,
