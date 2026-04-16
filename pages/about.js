@@ -50,6 +50,13 @@ export default function About() {
           <div className="timeline">
             {[
               {
+                title: 'Technical Writer',
+                company: '32BJ Benefit Funds',
+                years: '2025 - Present',
+                description:
+                  'Collaborating with SMEs to create highly technical internal documentation for business analysts, business users, developers, and other stakeholders.'
+              },
+              {
                 title: 'Frontend Developer & Technical Writer',
                 company: 'Freelance',
                 years: '2025 - Present',
